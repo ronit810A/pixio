@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Betania+Patmos&family=Doppio+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --pink: #fff9f4;
+    --white: #fff;
+    --black: #000;
+    --gray: #cfcccc;
+    --red: #ff2222;
+    --orange: #ff8811;
+    --green: #01ff38;
+}
+
+h1 {
+    font-size: 100px !important;
+}
+
+li {
+    list-style: none !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+button {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+body {
+    font-family: "Doppio One", sans-serif !important;
+    padding: 0;
+    margin: 0;
+}
+.container-fluid {
+    width: 1730px !important;
+}
+
+
+/* nav-bar */
+.nav-header {
+    background-color: var(--pink);
+    border-bottom: 1px solid var(--gray);
+}
+
+.nav-bar {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-link {
+    padding: 10px;
+}
+
+.nav-bar-link li {
+    padding: 10px 20px;
+}
+
+.nav-bar-link a {
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-bar-but button {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.nav-bar-icons.row {
+    font-size: 30px;
+}
+
+/* bwf-section */
+.bwf-section {
+    background-color: var(--pink);
+    padding: 50px;
+}
+
+.bwf-container {
+    position: relative;
+}
+
+.bwf-container-star1 {
+    position: absolute;
+    left: 46.70%;
+    top: -104px;
+    animation: rotate 5s linear infinite;
+}
+
+.bwf-container-star2 {
+    position: absolute;
+    left: 86.7%;
+    top: -104px;
+    animation: rotate 5s linear infinite;
+}
+
+.aa {
+    position: relative;
+}
+
+.bwf-price {
+    display: flex;
+    flex-direction: column;
+}
+
+.bwf-price-text {
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+.bwf-price-no {
+    font-size: 46px;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+.bwf-but {
+    padding: 10px 0;
+}
+
+.bwf-but button {
+    margin-right: 30px;
+    font-size: 23px;
+    background-color: var(--white);
+    padding: 10px 35px;
+    border-radius: 15px;
+    border: 1px solid var(--black);
+}
+
+.bwf-but button:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.bwf-text {
+    display: flex;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.bwf-text-a span {
+    font-size: 18px;
+}
+
+.bwf-text-a p {
+    font-size: 23px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+.bwf-img {
+    padding: 0 45px;
+}
+
+.bwf-img img {
+    border-radius: 50px;
+    margin-top: -60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Toggle Button */
+.menu-toggle {
+    display: none;
+    width: 42px;
+    height: 42px;
+    padding: 8px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
