@@ -22,6 +22,8 @@
     --red: #ff2222;
     --orange: #ff8811;
     --green: #01ff38;
+    --skin-color:#feeb9d;
+
 }
 
 h1 {
@@ -106,16 +108,21 @@ body {
     position: absolute;
     left: 46.70%;
     top: -104px;
-    animation: rotate 5s linear infinite;
+    animation: rotate 20s linear infinite;
 }
 
 .bwf-container-star2 {
     position: absolute;
     left: 86.7%;
     top: -104px;
-    animation: rotate 5s linear infinite;
+    animation: rotate 20s linear infinite;
 }
-
+.bwf-container-logo {
+    position: absolute;
+    left: 40%;
+    top: 66%;
+    animation: rotate 20s linear infinite;
+}
 .aa {
     position: relative;
 }
@@ -172,11 +179,27 @@ body {
 
 .bwf-img {
     padding: 0 45px;
+    position: relative;
 }
 
-.bwf-img img {
+.bwf-img-a {
     border-radius: 50px;
     margin-top: -60px;
+}
+.bwf-img-b {
+    position: absolute;
+    left: 62%;
+    bottom: 68px;
+}
+.bwf-img-btn {
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 18px 19px 16px 19px;
+    font-size: 29px;
+    bottom: 115px;
+    right: 230px;
 }
 
 
