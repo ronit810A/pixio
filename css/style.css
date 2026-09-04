@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Betania+Patmos&family=Doppio+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 @keyframes rotate {
     from {
         transform: rotate(0deg);
@@ -22,16 +23,18 @@
     --red: #ff2222;
     --orange: #ff8811;
     --green: #01ff38;
-    --skin-color:#feeb9d;
+    --skin-color: #feeb9d;
 
 }
 
 h1 {
     font-size: 76px !important;
 }
-h2{
+
+h2 {
     font-size: 40px !important;
 }
+
 li {
     list-style: none !important;
 }
@@ -52,7 +55,8 @@ body {
     padding: 0;
     margin: 0;
 }
-.container-fluid {
+
+.container {
     width: 1320px !important;
 }
 
@@ -119,12 +123,14 @@ body {
     top: -88px;
     animation: rotate 20s linear infinite;
 }
+
 .bwf-container-logo {
     position: absolute;
     left: 40%;
     top: 66%;
     animation: rotate 20s linear infinite;
 }
+
 .aa {
     position: relative;
 }
@@ -188,11 +194,13 @@ body {
     border-radius: 50px;
     margin-top: -60px;
 }
+
 .bwf-img-b {
     position: absolute;
     left: 71%;
     bottom: 68px;
 }
+
 .bwf-img-btn {
     position: absolute;
     border-radius: 50%;
@@ -203,19 +211,22 @@ body {
     bottom: 105px;
     right: 109px;
 }
+
 /* shop-section */
 
-.shop-section{
+.shop-section {
     background-color: var(--skin-color);
     position: relative;
-    padding: 50px;
+    padding: 40px 50px;
 }
+
 .shop-section-left {
     position: absolute;
     top: 0;
     left: 2%;
 }
-.shop-section-right{
+
+.shop-section-right {
     background-color: var(--black);
     width: 34%;
     position: absolute;
@@ -223,18 +234,22 @@ body {
     top: 0;
     bottom: 0;
 }
-.shop-container-main{
+
+.shop-container-main {
     position: relative;
 }
+
 .shop-rotater {
     position: absolute;
     right: 27.5%;
     top: 36%;
     animation: rotate 20s linear infinite;
 }
-.shop-container{
+
+.shop-container {
     position: relative;
 }
+
 .shop-left-box.text-center {
     display: flex;
     flex-direction: column;
@@ -243,9 +258,11 @@ body {
     position: relative;
     height: 300px;
 }
+
 .shop-left-img {
     padding: 10px;
 }
+
 .shop-left-btn {
     font-size: 14px;
     padding: 10px 38px;
@@ -255,39 +272,108 @@ body {
     position: absolute;
     bottom: 0;
 }
-.shop-left-btn:hover{
+
+.shop-left-btn:hover {
     color: var(--red);
 }
-.shop-text{
+
+.shop-text {
     color: var(--white);
     position: relative;
-    padding: 75px;
+    padding: 50px 80px;
 }
+
 .shop-text h2 {
     padding: 10px 0;
 }
+
 .shop-text p {
     font-size: 19px;
     color: var(--gray);
 }
+
 .shop-text-arow {
     display: flex;
     gap: 16px;
     font-size: 20px;
 }
+
 .shop-text-arow button {
     color: var(--white);
 }
-
-
-
-
-
-
-
-
-
-
+/* syw-section */
+.syw-section{
+    background-color: var(--pink);
+    padding: 100px;
+}
+.syw-img{
+    position: relative;
+    padding: 10px;
+}
+.syw-img img {
+    width: 100%;
+    mask-image: url(../images/bg-media.svg);
+    mask-size: auto 100%;
+    mask-repeat: no-repeat;
+    height: 100%;
+    object-fit: cover;
+    mask-position: right;
+}
+.syw-img-btn {
+    position: absolute;
+    left: 10%;
+    bottom: 7%;
+    border: 1px solid var(--black);
+    font-size: 24px;
+    background-color: var(--white);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.syw-img-btn:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+.syw-content {
+    padding: 10px;
+}
+.syw-text h2 {
+    padding: 10px 0;
+}
+.syw-content p {
+    font-size: 18px;
+    color: #000000b3;
+    padding: 10px 0;
+}
+.syw-content-img {
+    position: relative;
+}
+.syw-content-img img {
+    border-radius: 30px;
+}
+.syw-content-img-btn {
+    position: absolute;
+    left: 9%;
+    bottom: 5%;
+    border: 1px solid var(--black);
+    background-color: var(--white);
+    border-radius: 11px;
+    padding: 6px 13px;
+}
+.syw-content-img-btn:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+.syw-content-img-star {
+    position: absolute;
+    top: -43px;
+    right: -45px;
+    animation: rotate 20s linear infinite;
+}
+.syw-content-img-star-text {
+    position: absolute;
+    top: -33px;
+    right: -11px;
+}
 
 
 
