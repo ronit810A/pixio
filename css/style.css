@@ -301,15 +301,18 @@ body {
 .shop-text-arow button {
     color: var(--white);
 }
+
 /* syw-section */
-.syw-section{
+.syw-section {
     background-color: var(--pink);
     padding: 100px;
 }
-.syw-img{
+
+.syw-img {
     position: relative;
     padding: 10px;
 }
+
 .syw-img img {
     width: 100%;
     mask-image: url(../images/bg-media.svg);
@@ -319,6 +322,7 @@ body {
     object-fit: cover;
     mask-position: right;
 }
+
 .syw-img-btn {
     position: absolute;
     left: 10%;
@@ -329,27 +333,34 @@ body {
     padding: 10px 20px;
     border-radius: 10px;
 }
-.syw-img-btn:hover{
+
+.syw-img-btn:hover {
     background-color: var(--black);
     color: var(--white);
 }
+
 .syw-content {
     padding: 10px;
 }
+
 .syw-text h2 {
     padding: 10px 0;
 }
+
 .syw-content p {
     font-size: 18px;
     color: #000000b3;
     padding: 10px 0;
 }
+
 .syw-content-img {
     position: relative;
 }
+
 .syw-content-img img {
     border-radius: 30px;
 }
+
 .syw-content-img-btn {
     position: absolute;
     left: 9%;
@@ -359,21 +370,110 @@ body {
     border-radius: 11px;
     padding: 6px 13px;
 }
-.syw-content-img-btn:hover{
+
+.syw-content-img-btn:hover {
     background-color: var(--black);
     color: var(--white);
 }
+
 .syw-content-img-star {
     position: absolute;
     top: -43px;
     right: -45px;
     animation: rotate 20s linear infinite;
 }
+
 .syw-content-img-star-text {
     position: absolute;
     top: -33px;
     right: -11px;
 }
+
+/* floating-section */
+.floating-section {
+    background-color: var(--pink);
+    padding: 20px 0;
+}
+
+.orb {
+    display: inline-block;
+    margin: 0 39.7px;
+    float: left;
+    font-size: 61px;
+    transition: all .2s ease-out;
+}
+
+.orb:hover {
+    transform: scale(1.2);
+    opacity: .5;
+    cursor: pointer;
+}
+
+.marquee {
+    transform: rotate(-2deg);
+    height: 121px;
+    padding: 14px;
+    width: 100%;
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee--inner {
+    display: block;
+    width: 200%;
+    position: absolute;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee--inner:hover {
+    animation-play-state: paused;
+}
+
+span {
+    float: left;
+    width: 50%;
+}
+
+@keyframes marquee {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -100%;
+    }
+}
+
+/* products-section */
+.products-section {
+    background-color: var(--pink);
+    padding: 50px;
+}
+
+.products-content {
+    display: flex;
+    align-items: center;
+}
+
+ul.product-content-text {
+    padding: 7px;
+    border: 1px solid var(--black);
+    border-radius: 50px;
+}
+
+ul.product-content-text li {
+    padding: 5px 22px;
+    font-size: 18px;
+}
+
+li.product-content-text-a {
+    border-radius: 50px;
+    background-color: var(--black);
+    color: var(--white);
+}
+
 
 
 
