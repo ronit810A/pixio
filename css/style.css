@@ -39,12 +39,20 @@ h4 {
     font-size: 20px !important;
 }
 
+h6 {
+    font-size: 14px !important;
+}
+
 li {
     list-style: none !important;
 }
 
 a {
     text-decoration: none !important;
+}
+
+span {
+    float: none !important;
 }
 
 button {
@@ -619,21 +627,26 @@ p.adv-content-left-b {
     border-radius: 10px;
     font-size: 18px;
 }
-.adv-content-left button:hover{
+
+.adv-content-left button:hover {
     background-color: var(--black);
     color: var(--white);
 }
+
 .adv-content-right {
     padding: 40px;
 }
+
 .adv-content-right p {
     margin: 0;
     font-size: 20px;
 }
+
 .adv-content-right h1 {
     font-size: 58px !important;
     padding: 10px 0;
 }
+
 .adv-content-right button {
     border: 2px solid var(--black);
     padding: 10px 20px;
@@ -643,6 +656,228 @@ p.adv-content-left-b {
     color: var(--white);
     margin: 20px 0;
 }
+
+/* user-section */
+.user-section {
+    background-color: var(--pink);
+    padding: 70px 0;
+}
+
+.user-img {
+    padding-right: 20px;
+}
+
+.user-img img {
+    border-radius: 50% 50% 0 0;
+}
+
+.user-content {
+    padding-left: 20px;
+}
+
+.user-text h2 {
+    font-size: 34px !important;
+    padding-top: 30px;
+}
+
+.user-rotater {
+    animation: rotate 20s linear infinite;
+}
+
+.row.user-content-box {
+    padding-top: 50px;
+}
+
+img.user-box-img {
+    border-radius: 30px;
+    height: 260px;
+}
+
+.user-box-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.user-box-text span {
+    font-size: 14px;
+    color: var(--red);
+}
+
+.user-box-price p {
+    font-size: 15px;
+    margin: 0;
+}
+
+.user-box-price span {
+    font-size: 13px;
+    color: #706f6f;
+}
+
+/* gso-section */
+.gso-section {
+    background-color: var(--pink);
+    padding: 50px;
+}
+
+.gso-box {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.gso-box img {
+    border-radius: 30px;
+}
+
+.gso-box-text {
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gso-box-text-left span {
+    color: var(--red);
+    font-size: 15px;
+}
+
+.gso-box-text-right p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.gso-box-text-right span {
+    font-size: 14px;
+    color: #706f6f;
+}
+
+img.gso-star {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    animation: rotate 20s linear infinite;
+}
+
+.gso-star-text {
+    position: absolute;
+    top: -12px;
+    right: -1px;
+}
+
+.gso-img {
+    position: relative;
+}
+
+img.gso-img-main {
+    margin-right: -182px;
+    width: 110%;
+    mask-image: url(../images/bg-media.svg);
+    mask-size: auto 100%;
+    mask-repeat: no-repeat;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gso-img-text {
+    position: absolute;
+    top: 167px;
+    left: 179px;
+    color: var(--white);
+}
+
+.gso-img-text h2 {
+    font-size: 48px !important;
+}
+
+.gso-img-text p {
+    font-size: 18px;
+}
+
+.gso-img-text button {
+    background-color: var(--white);
+}
+
+.gso-img-text button {
+    background-color: var(--white);
+    padding: 12px 30px;
+    border-radius: 10px;
+}
+
+/* map section */
+.map-section {
+    background-color: var(--pink);
+    background-image: url(../images/map2.png);
+    padding: 70px;
+    height: 570px;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+.map-content-a {
+    position: relative;
+}
+.map-location-a {
+    position: absolute;
+    left: 315px;
+    top: 177px;
+}
+.map-location-b {
+    position: absolute;
+    right: 136px;
+    top: 86px;
+}
+.map-location--c {
+    position: absolute;
+    right: -11px;
+    top: -8px;
+}
+.map-img {
+    width: 200px;
+}
+.map-img img {
+    border-radius: 20px 20px 0 0;
+}
+.map-img-text {
+    background: var(--white);
+    padding: 10px;
+    border-radius: 0 0 20px 20px;
+}
+.map-img-1{
+    transform:rotate(-10.206deg) scale(0.8);
+    position: absolute;
+    top: -43px;
+    left: 50px;
+}
+.map-img-2 {
+    transform: rotate(6.093deg) scale(0.6);
+    position: absolute;
+    top: -141px;
+    right: 180px;
+    filter: blur(9px);
+}
+
+.map-img-3{
+    transform: rotate(15.72deg) scale(0.7);
+    position: absolute;
+    right: -172px;
+    top: 26px;
+}
+.map-content-b {
+    padding-left: 74px;
+    margin-top: -113px;
+}
+
+
+
+
+
 
 
 
