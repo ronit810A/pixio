@@ -59,12 +59,10 @@ button.syw-text-btn {
     padding: 15px 0;
 }
 .syw-content-img-star {
-    top: -22px;
-    right: -30px;
+    display: none;
 }
 .syw-content-img-star-text {
-    top: -10px;
-    right: 6px;
+    display: none;
 }
 .syw-content-img-btn {
     left: 31%;
@@ -146,6 +144,128 @@ img.gso-img-main {
 .gso-img-text {
     top: 17px;
     left: 15px;
+}
+img.gso-star {
+    display: none;
+}
+.gso-star-text {
+    display: none;
+}
+.map-section {
+    background-image: none;
+    padding: 10px;
+}
+.map-content-a {
+    position: relative;
+    display: none;
+}
+.map-content-b {
+    padding-left: 10px;
+    margin-top: 0;
+}
+.map-slider {
+    width: 100%;
+}
+.map-box {
+    width: 80%;
+}
+.deal-section {
+    padding: 10px;
+}
+.deal-content {
+    padding-bottom: 10px;
+}
+.for-you-section {
+    padding: 10px;
+}
+.for-you-content {
+    padding: 0;
+}
+.for-you-box img {
+    margin-bottom: 30px;
+}
+section.featured-section {
+    padding: 10px;
+}
+.rat-section {
+    padding: 10px;
+}
+img.rat-img-main {
+    margin-left: 0;
+    width: 100%;
+    mask-size: 100%;
+}
+.rat-img-text {
+    top: 57px;
+    right: 0;
+}
+img.rat-star {
+    display: none;
+}
+.rat-star-text {
+    display: none;
+}
+section.sponser-section {
+    padding: 10px;
+}
+section.post-section {
+    padding: 10px;
+}
+.col-md-6.post-rotater {
+    display: none;
+}
+.post-slider {
+    margin: 0 !important;
+}
+.collection-section {
+    height: auto;
+    padding: 10px;
+}
+.collection-1.collection {
+    display: none;
+}
+.collection-2.collection {
+    display: none;
+}
+.collection-3.collection {
+    display: none;
+}
+.collection-4.collection {
+    display: none;
+}
+.collection-5.collection {
+    display: none;
+}
+.collection {
+    position: relative;
+}
+.collection-content {
+    left: 0;
+    top: 0;
+}
+.collection-content.text-center h2 {
+    font-size: 27px !important;
+}
+.collection-content button {
+    margin: 10px;
+}
+footer {
+    padding-top: 10px;
+}
+.footer-top.row {
+    padding: 0px;
+}
+.footer-box-b  .row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.row.footer-box-b-content {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+.footer-box-b .col-sm-9 {
+    width: 60%;
 }
 }
 
