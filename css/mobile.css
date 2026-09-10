@@ -1,0 +1,274 @@
+@media only screen and (max-width: 768px) {
+    body .container {
+        width: 100% !important;
+    }
+
+    .nav-header {
+        display: none;
+    }
+
+    .bwf-container-star {
+        display: none;
+    }
+    .bwf-section {
+    padding: 10px;
+}
+.bwf-but {
+    display: flex;
+}
+.bwf-but button {
+    margin-right: 10px;
+}
+.bwf-img {
+    padding: 0;
+}
+.bwf-img-a {
+    width: 100%;
+}
+.bwf-img-b {
+    left: 89.95%;
+}
+.bwf-img-btn {
+    padding: 11px 12px 10px 12px;
+    font-size: 17px;
+    bottom: 116px;
+    right: -15px;
+}
+.shop-section-right {
+    width: 100%;
+    top: 84.5%;
+    left: 0;
+}
+.shop-rotater {
+    display: none;
+}
+.shop-text {
+    padding: 0;
+    text-align: center;
+}
+.shop-text-arow {
+    display: none;
+}
+.syw-section {
+    padding: 10px;
+}
+button.syw-text-btn {
+    display: none;
+}
+.syw-content-img {
+    padding: 15px 0;
+}
+.syw-content-img-star {
+    top: -22px;
+    right: -30px;
+}
+.syw-content-img-star-text {
+    top: -10px;
+    right: 6px;
+}
+.syw-content-img-btn {
+    left: 31%;
+    bottom: 7%;
+}
+.products-section {
+    padding: 10px;
+}
+ul.product-content-text {
+    display: none;
+}
+.adv-section {
+    padding: 10px;
+    height: 600px;
+}
+.adv-bg-left img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    bottom: 50%;
+    height: 50%;
+}
+.adv-bg-right img {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+}
+.adv-content-left {
+    width: 290px;
+    height: 290px;
+    padding: 40px;
+    left: 107px;
+    top: -2px;
+}
+p.adv-content-left-a {
+    font-size: 13px;
+}
+p.adv-content-left-b {
+    font-size: 44px;
+}
+.adv-content-left h1 {
+    font-weight: normal;
+}
+.adv-content-right p {
+    font-size: 19px;
+}
+.adv-content-right h1 {
+    font-size: 33px !important;
+}
+.adv-content-right {
+    padding: 10px;
+    position: absolute;
+    top: 335px;
+}
+.user-section {
+    padding: 10px;
+}
+.user-rotater {
+    display: none;
+}
+.row.user-content-box {
+    padding-top: 10px;
+}
+img.user-box-img {
+    height: auto;
+}
+.gso-section {
+    padding: 10px;
+}
+img.gso-img-main {
+    margin-right: 0;
+    width: 100%;
+    mask-size: 100%;
+}
+.gso-img-text {
+    top: 17px;
+    left: 15px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+
+
+
+
+
+
+
+
+
+
+/* =========================
+       MOBILE RESPONSIVE
+    ========================= */
+
+@media (max-width: 768px) {
+
+    .header-inner {
+        min-height: 70px;
+        width: 100%;
+    }
+
+    /* Show Toggle Button */
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Mobile Navigation */
+    .nav-link {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+
+        background: #fff;
+
+        max-height: 0;
+        overflow: hidden;
+
+        opacity: 0;
+        visibility: hidden;
+
+        transition:
+            max-height 0.4s ease,
+            opacity 0.3s ease,
+            visibility 0.3s ease;
+
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Open Menu */
+    .nav-link.active {
+        max-height: 500px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Mobile Menu List */
+    .nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        padding: 10px 20px 20px;
+    }
+
+    .nav li {
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+
+    .nav li:last-child {
+        border-bottom: none;
+    }
+
+    .nav li a {
+        display: block;
+        width: 100%;
+        padding: 14px 5px;
+        font-size: 16px;
+    }
+
+    /* Hamburger Animation */
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .logo a {
+        font-size: 21px;
+    }
+
+    .nav {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

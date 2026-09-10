@@ -77,47 +77,53 @@ body {
 
 /* nav-bar */
 .nav-header {
-    background-color: var(--pink);
-    border-bottom: 1px solid var(--gray);
+  position: fixed;
+  width: 100%;
+  background-color: var(--white);
+  z-index: 9;
 }
 
 .nav-bar {
-    padding: 30px 0;
+    padding: 20px;
     display: flex;
     align-items: center;
+    top: 0;
 }
 
-.nav-bar-link {
-    padding: 10px;
+.nav-link li {
+  background: none;
+    padding: 12px;
 }
 
-.nav-bar-link li {
-    padding: 10px 20px;
+.nav-link a {
+  color: var(--dark-blue);
+  font-size: 15px;
+  font-weight: bold;
+  background: none;
 }
 
-.nav-bar-link a {
-    color: var(--black);
-    font-size: 16px;
-    font-weight: 500;
+.nav-btn {
+  color: var(--white);
+  padding: 10px 30px;
+  background-color: var(--green);
+  color: var(--white);
 }
 
-.nav-bar-but button {
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 16px;
-    font-weight: 400;
-    cursor: pointer;
+.nav-btn:hover {
+  background-color: var(--orange);
+  color: var(--white);
 }
-
-.nav-bar-icons.row {
-    font-size: 25px;
+.col-md-3.nav-bar-img {
+    width: 17%;
+}
+.col-md-7.nav-bar-btn {
+    width: 66%;
 }
 
 /* bwf-section */
 .bwf-section {
     background-color: var(--pink);
-    padding: 50px;
+    padding: 139px 50px 50px 50px;
 }
 
 .bwf-container {
@@ -127,14 +133,14 @@ body {
 .bwf-container-star1 {
     position: absolute;
     left: 46.70%;
-    top: -88px;
+    top: -50px;
     animation: rotate 20s linear infinite;
 }
 
 .bwf-container-star2 {
     position: absolute;
     left: 89.7%;
-    top: -88px;
+    top: -48px;
     animation: rotate 20s linear infinite;
 }
 
@@ -211,7 +217,7 @@ body {
 
 .bwf-img-a {
     border-radius: 50px;
-    margin-top: -60px;
+    margin-top: -38px;
 }
 
 .bwf-img-b {
