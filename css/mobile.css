@@ -397,6 +397,9 @@
 .shop-section {
     padding: 20px;
 }
+.shop-section-left {
+    left: 0 !important;
+}
 .shop-section-right {
     width: 100%;
     top: 63%;
