@@ -14,8 +14,8 @@ const navMenu = document.getElementById("navMenu");
 /* Toggle Mobile Menu */
 menuToggle.addEventListener("click", function () {
 
-    menuToggle.classList.toggle("active");
-    navMenu.classList.toggle("active");
+  menuToggle.classList.toggle("active");
+  navMenu.classList.toggle("active");
 
 });
 
@@ -23,12 +23,12 @@ menuToggle.addEventListener("click", function () {
 /* Close Menu After Clicking Link */
 document.querySelectorAll(".nav a").forEach(function (link) {
 
-    link.addEventListener("click", function () {
+  link.addEventListener("click", function () {
 
-        menuToggle.classList.remove("active");
-        navMenu.classList.remove("active");
+    menuToggle.classList.remove("active");
+    navMenu.classList.remove("active");
 
-    });
+  });
 
 });
 
@@ -42,6 +42,15 @@ $('.map-slider').slick({
   autoplay: true,
   autoplaySpeed: 3000,
   responsive: [
+    {
+      breakpoint: 1150,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
     {
       breakpoint: 768,
       settings: {
@@ -80,7 +89,17 @@ $('.deal-slider').slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 3000,
+
   responsive: [
+    {
+      breakpoint: 1150,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
     {
       breakpoint: 768,
       settings: {
@@ -89,24 +108,7 @@ $('.deal-slider').slick({
         infinite: true,
         dots: false
       }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 });
 
@@ -119,6 +121,15 @@ $('.featured-slider').slick({
   autoplay: true,
   autoplaySpeed: 3000,
   responsive: [
+    {
+      breakpoint: 1150,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
     {
       breakpoint: 768,
       settings: {
@@ -158,6 +169,15 @@ $('.post-slider').slick({
   autoplay: false,
   autoplaySpeed: 3000,
   responsive: [
+    {
+      breakpoint: 1150,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false
+      }
+    },
     {
       breakpoint: 768,
       settings: {
