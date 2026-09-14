@@ -377,46 +377,58 @@
     section.yfj-section {
         padding: 100px 10px 10px 10px;
     }
+
     .yfj-content h2 {
-    font-size: 34px !important;
-}
-.yjf-text.text-center {
-    text-align: left !important;
-}
-.about-page-content {
-    position: relative;
-    width: auto;
-    border-radius: unset;
-    bottom: 0;
-    right: 0;
-}
-section.eys-section {
-    padding: 10px;
-}
-.eys-img {
-    margin-right: 0;
-}
-.eys-box .col-md-2 {
-    width: 30%;
-}
-.eys-box .col-md-10 {
-    width: 50%;
-}
-section.question-section {
-    padding: 10px;
-}
-.question-container.row {
-    gap: 12px;
-}
-.question-text-left {
-    text-align: left !important;
-}
-section.mot-section {
-    padding: 10px;
-}
-.mot-content {
-    margin-bottom: 30px;
-}
+        font-size: 34px !important;
+    }
+
+    .yjf-text.text-center {
+        text-align: left !important;
+    }
+
+    .about-page-content {
+        position: relative;
+        width: auto;
+        border-radius: unset;
+        bottom: 0;
+        right: 0;
+    }
+
+    section.eys-section {
+        padding: 10px;
+    }
+
+    .eys-img {
+        margin-right: 0;
+    }
+
+    .eys-box .col-md-2 {
+        width: 30%;
+    }
+
+    .eys-box .col-md-10 {
+        width: 50%;
+    }
+
+    section.question-section {
+        padding: 10px;
+    }
+
+    .question-container.row {
+        gap: 12px;
+    }
+
+    .question-text-left {
+        text-align: left !important;
+    }
+
+    section.mot-section {
+        padding: 10px;
+    }
+
+    .mot-content {
+        margin-bottom: 30px;
+    }
 }
 
 
@@ -710,6 +722,39 @@ section.mot-section {
         width: 33%;
         margin-top: 20px;
     }
+
+
+
+    section.yfj-section {
+        padding: 138px 10px 42px 80px;
+    }
+
+    .yfj-container .col-md-6 {
+        width: 76% !important;
+    }
+
+    .yjf-text.text-center {
+        text-align: left !important;
+    }
+    .about-page-content {
+    position: relative;
+    width: auto;
+    border-radius: 0;
+    bottom: 0;
+    right: 0;
+}
+section.eys-section {
+    padding: 30px;
+}
+.eys-content h2 {
+    font-size: 29px !important;
+}
+.question-container.row {
+    gap: 80px;
+}
+section.mot-section {
+    padding: 30px;
+}
 }
 
 
