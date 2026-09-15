@@ -829,6 +829,25 @@ section.eys-section {
 section.mot-section {
     padding: 30px;
 }
+
+
+
+
+section.faq-page {
+    padding: 140px 10px 40px;
+}
+.faq-page-container.row {
+    align-items: center;
+}
+.faq-page-left {
+    padding-right: 20px;
+}
+.faq-page-right-search input {
+    width: 377px;
+}
+.faq-page-right {
+    padding: 0;
+}
 }
 
 
