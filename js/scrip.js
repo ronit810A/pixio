@@ -196,3 +196,30 @@ $('.post-slider').slick({
     // instead of a settings object
   ]
 });
+
+
+
+
+
+/*======================
+        faq-page         
+  ======================*/
+
+  let question = document.querySelectorAll(".faq-page-right-question");
+
+question.forEach(question => {
+  question.addEventListener("click", event => {
+    const active = document.querySelector(".faq-page-right-question.active");
+    if(active && active !== question ) {
+      active.classList.toggle("active");
+      active.nextElementSibling.style.maxHeight = 0;
+    }
+    question.classList.toggle("active");
+    const answer = question.nextElementSibling;
+    if(question.classList.contains("active")){
+      answer.style.maxHeight = answer.scrollHeight + "px";
+    } else {
+      answer.style.maxHeight = 0;
+    }
+  })
+})

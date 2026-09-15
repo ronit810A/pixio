@@ -17,6 +17,7 @@
 
 :root {
     --pink: #fff9f4;
+    --pink-a: #ffedd4;
     --white: #fff;
     --black: #000;
     --gray: #cfcccc;
@@ -25,7 +26,7 @@
     --orange: #ff8811;
     --green: #01ff38;
     --skin-color: #feeb9d;
-    --red-light:#D23636;
+    --red-light: #D23636;
 
 }
 
@@ -122,6 +123,7 @@ body {
 .col-md-7.nav-bar-btn {
     width: 66%;
 }
+
 /* Toggle Button */
 .menu-toggle {
     display: none;
@@ -137,6 +139,7 @@ body {
     align-items: center;
     gap: 5px;
 }
+
 /* bwf-section */
 .bwf-section {
     background-color: var(--pink);
@@ -1691,9 +1694,10 @@ section.mot-section {
     cursor: pointer;
 }
 
-.mot-box.text-center h3:hover{
+.mot-box.text-center h3:hover {
     color: var(--red);
 }
+
 .mot-box.text-center p {
     font-size: 14px;
     color: var(--graya);
@@ -1714,6 +1718,7 @@ section.price-page {
     background-size: cover;
     position: relative;
 }
+
 .price-page:before {
     content: "";
     background: var(--black);
@@ -1724,57 +1729,71 @@ section.price-page {
     bottom: 0;
     opacity: 0.3;
 }
+
 .price-cotainer.text-center {
     color: var(--white);
     position: relative;
 }
+
 ul.price-ul {
     display: flex;
     justify-content: center;
     gap: 11px;
 }
+
 ul.price-ul a {
     color: var(--white);
 }
+
 /* price-plan */
 section.price-plan {
     padding: 100px;
     background-color: var(--pink);
 }
+
 .price-plan-box {
     border: 1px solid;
     padding: 40px;
     border-radius: 30px;
     transition: transform 0.3s ease;
 }
+
 .price-plan-box:hover {
     transform: translateY(-30px);
 }
+
 .price-plan-box h4 {
     font-weight: bold;
 }
+
 .price-plan-box p {
     margin: 20px 0;
 }
+
 p.price-plan-price {
     font-size: 62px;
 }
+
 p.price-plan-price span {
     font-size: 20px;
 }
+
 .price-plan-box button {
     border: 1px solid;
     border-radius: 10px;
     padding: 10px 119px;
     margin: 20px 0;
 }
+
 .price-plan-box:hover button {
     background-color: var(--black);
     color: var(--white);
 }
+
 ul.price-plan-box-ul {
     padding: 10px 0;
 }
+
 li.price-plan-li-a {
     padding: 5px;
     display: flex;
@@ -1782,9 +1801,11 @@ li.price-plan-li-a {
     gap: 10px;
     font-size: 18px;
 }
+
 li.price-plan-li-a i {
     font-size: 20px;
 }
+
 li.price-plan-li-b {
     padding: 5px;
     display: flex;
@@ -1793,15 +1814,18 @@ li.price-plan-li-b {
     font-size: 18px;
     color: var(--graya);
 }
+
 li.price-plan-li-b i {
     font-size: 20px;
     color: var(--red-light);
 }
+
 /* price-question */
 section.price-question {
     padding: 0 0 100px;
     background-color: var(--pink);
 }
+
 .price-question-container.row {
     background-color: var(--black);
     color: var(--white);
@@ -1811,18 +1835,140 @@ section.price-question {
     align-items: center;
     gap: 100px;
 }
+
 .price-question-content {
     text-align: right;
 }
+
 .price-question-content p {
     margin: 0;
     font-size: 25px;
 }
+
 .price-question-content span {
     font-size: 17px;
 }
+
 button.price-question-btn {
     background-color: var(--white);
     padding: 10px 20px;
     border-radius: 10px;
+}
+
+
+/* faq-page */
+section.faq-page {
+    padding: 140px 100px 100px;
+    background-color: var(--pink);
+    position: relative;
+}
+
+section.faq-page:before {
+    content: "";
+    background: var(--pink-a);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 50%;
+    bottom: 0;
+}
+
+.faq-page-left {
+    position: relative;
+    padding-right: 60px;
+}
+
+ul.faq-page-left-ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+}
+
+ul.faq-page-left-ul a {
+    color: var(--black);
+}
+
+.faq-page-left-text.row {
+    margin: 50px 0;
+}
+
+.faq-page-left-box {
+    border: 1px solid;
+    padding: 20px 29px;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.faq-page-left-box p {
+    margin: 0;
+}
+
+.faq-page-left img {
+    border-radius: 30px;
+}
+.faq-page-right {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.faq-page-right-search {
+    position: relative;
+    margin-bottom: 20px;
+}
+.faq-page-right-search input {
+    padding: 10px;
+    width: 451px;
+}
+.faq-page-right-search i {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+.faq-page-right-faq {
+    width: 90%;
+}
+
+.faq-page-right-box {
+    border: 1px solid;
+    color: black;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.faq-page-right-question {
+    font-size: 1.2rem;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-page-right-question::after {
+    content: "\002B";
+    font-size: 2.2rem;
+    position: absolute;
+    right: 20px;
+    transition: 0.2s;
+}
+
+.faq-page-right-question.active::after {
+    transform: rotate(45deg);
+}
+
+.faq-page-right-answercont {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.faq-page-right-answer {
+    padding: 0 20px 20px;
+    line-height: 1.5rem;
 }
