@@ -429,6 +429,36 @@
     .mot-content {
         margin-bottom: 30px;
     }
+
+
+
+
+
+
+    section.price-page {
+    padding: 136px 0 100px;
+    background-position: center;
+    height: 283px;
+}
+section.price-plan {
+    padding: 10px;
+}
+.price-plan-box {
+    margin-top: 50px;
+}
+.price-plan-box button {
+    padding: 10px 98px;
+}
+section.price-question {
+    padding: 10px 0 20px;
+}
+.price-question-container.row {
+    border-radius: unset;
+    gap: 20px;
+}
+.price-question-content {
+    text-align: left;
+}
 }
 
 

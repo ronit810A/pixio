@@ -1745,6 +1745,10 @@ section.price-plan {
     border: 1px solid;
     padding: 40px;
     border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+.price-plan-box:hover {
+    transform: translateY(-30px);
 }
 .price-plan-box h4 {
     font-weight: bold;
@@ -1764,7 +1768,7 @@ p.price-plan-price span {
     padding: 10px 119px;
     margin: 20px 0;
 }
-.price-plan-box button:hover {
+.price-plan-box:hover button {
     background-color: var(--black);
     color: var(--white);
 }
@@ -1793,25 +1797,32 @@ li.price-plan-li-b i {
     font-size: 20px;
     color: var(--red-light);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* price-question */
+section.price-question {
+    padding: 0 0 100px;
+    background-color: var(--pink);
+}
+.price-question-container.row {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+.price-question-content {
+    text-align: right;
+}
+.price-question-content p {
+    margin: 0;
+    font-size: 25px;
+}
+.price-question-content span {
+    font-size: 17px;
+}
+button.price-question-btn {
+    background-color: var(--white);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
