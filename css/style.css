@@ -25,6 +25,7 @@
     --orange: #ff8811;
     --green: #01ff38;
     --skin-color: #feeb9d;
+    --red-light:#D23636;
 
 }
 
@@ -121,7 +122,21 @@ body {
 .col-md-7.nav-bar-btn {
     width: 66%;
 }
+/* Toggle Button */
+.menu-toggle {
+    display: none;
+    width: 42px;
+    height: 42px;
+    padding: 8px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
 /* bwf-section */
 .bwf-section {
     background-color: var(--pink);
@@ -1688,18 +1703,115 @@ section.mot-section {
     margin-top: 30px;
 }
 
-/* Toggle Button */
-.menu-toggle {
-    display: none;
-    width: 42px;
-    height: 42px;
-    padding: 8px;
-    border: none;
-    background: transparent;
-    cursor: pointer;
 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
+
+
+
+/* price-page */
+section.price-page {
+    padding: 160px 0 100px;
+    background-image: url(../images/pricing\ bg.jpg);
+    background-size: cover;
+    position: relative;
 }
+.price-page:before {
+    content: "";
+    background: var(--black);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.3;
+}
+.price-cotainer.text-center {
+    color: var(--white);
+    position: relative;
+}
+ul.price-ul {
+    display: flex;
+    justify-content: center;
+    gap: 11px;
+}
+ul.price-ul a {
+    color: var(--white);
+}
+/* price-plan */
+section.price-plan {
+    padding: 100px;
+    background-color: var(--pink);
+}
+.price-plan-box {
+    border: 1px solid;
+    padding: 40px;
+    border-radius: 30px;
+}
+.price-plan-box h4 {
+    font-weight: bold;
+}
+.price-plan-box p {
+    margin: 20px 0;
+}
+p.price-plan-price {
+    font-size: 62px;
+}
+p.price-plan-price span {
+    font-size: 20px;
+}
+.price-plan-box button {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px 119px;
+    margin: 20px 0;
+}
+.price-plan-box button:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+ul.price-plan-box-ul {
+    padding: 10px 0;
+}
+li.price-plan-li-a {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+li.price-plan-li-a i {
+    font-size: 20px;
+}
+li.price-plan-li-b {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: var(--graya);
+}
+li.price-plan-li-b i {
+    font-size: 20px;
+    color: var(--red-light);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
