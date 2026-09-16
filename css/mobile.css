@@ -542,6 +542,29 @@
         width: auto;
         border-radius: 0 0 50px 50px;
     }
+
+
+
+
+
+    section.contact-page {
+        padding: 150px 10px 10px;
+    }
+
+    .contact-page-content p {
+        width: auto;
+    }
+
+    form.contact-page-form {
+        padding: 20px;
+        margin-left: 0;
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+
+    form.contact-page-form button {
+        padding: 10px 134px;
+    }
 }
 
 
@@ -904,6 +927,23 @@
 
     .blog-page-text {
         width: auto;
+    }
+
+
+
+
+
+
+    section.contact-page {
+        padding: 150px 40px 70px;
+    }
+
+    .contact-page-content p {
+        width: auto;
+    }
+
+    form.contact-page-form {
+        margin-left: 0;
     }
 }
 
