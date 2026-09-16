@@ -999,7 +999,7 @@
 
     /* Open Menu */
     .nav-link.active {
-        max-height: 500px;
+        max-height: 550px;
         opacity: 1;
         visibility: visible;
         background-color: var(--white);

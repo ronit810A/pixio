@@ -22,7 +22,9 @@ document.querySelectorAll(".nav a").forEach(function (link) {
 
 });
 
-
+/* ================
+     map-slider
+   ================*/  
 $('.map-slider').slick({
   dots: false,
   infinite: true,
