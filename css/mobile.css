@@ -436,29 +436,35 @@
 
 
     section.price-page {
-    padding: 136px 0 100px;
-    background-position: center;
-    height: 283px;
-}
-section.price-plan {
-    padding: 10px;
-}
-.price-plan-box {
-    margin-top: 50px;
-}
-.price-plan-box button {
-    padding: 10px 98px;
-}
-section.price-question {
-    padding: 10px 0 20px;
-}
-.price-question-container.row {
-    border-radius: unset;
-    gap: 20px;
-}
-.price-question-content {
-    text-align: left;
-}
+        padding: 136px 0 100px;
+        background-position: center;
+        height: 283px;
+    }
+
+    section.price-plan {
+        padding: 10px;
+    }
+
+    .price-plan-box {
+        margin-top: 50px;
+    }
+
+    .price-plan-box button {
+        padding: 10px 98px;
+    }
+
+    section.price-question {
+        padding: 10px 0 20px;
+    }
+
+    .price-question-container.row {
+        border-radius: unset;
+        gap: 20px;
+    }
+
+    .price-question-content {
+        text-align: left;
+    }
 
 
 
@@ -466,46 +472,76 @@ section.price-question {
 
 
 
-section.faq-page {
-    padding: 110px 10px 10px;
-}
-section.faq-page:before {
-    right: 0;
-    bottom: 54%;
-}
-.faq-page-left {
-    padding-right: 0;
-}
-.faq-page-left h2 {
-    font-size: 37px !important;
-}
-.faq-page-left-text.row .col-md-4 {
-    width: 33.3%;
-}
-.faq-page-left-box {
-    padding: 20px 10px;
-}
-.faq-page-left-box p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-.faq-page-left img {
-    display: none;
-}
-.faq-page-right {
-    padding: 0;
-}
-.faq-page-right-search input {
-    width: 330px;
-}
-.faq-page-right-question {
-    font-size: 15px;
-}
-.faq-page-right-answer {
-    line-height: normal;
-}
+    section.faq-page {
+        padding: 110px 10px 10px;
+    }
+
+    section.faq-page:before {
+        right: 0;
+        bottom: 54%;
+    }
+
+    .faq-page-left {
+        padding-right: 0;
+    }
+
+    .faq-page-left h2 {
+        font-size: 37px !important;
+    }
+
+    .faq-page-left-text.row .col-md-4 {
+        width: 33.3%;
+    }
+
+    .faq-page-left-box {
+        padding: 20px 10px;
+    }
+
+    .faq-page-left-box p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .faq-page-left img {
+        display: none;
+    }
+
+    .faq-page-right {
+        padding: 0;
+    }
+
+    .faq-page-right-search input {
+        width: 330px;
+    }
+
+    .faq-page-right-question {
+        font-size: 15px;
+    }
+
+    .faq-page-right-answer {
+        line-height: normal;
+    }
+
+
+
+
+
+
+    section.blog-page-section {
+        padding: 30px 10px;
+    }
+
+    .blog-page-box img {
+        border-radius: 50px 50px 0 0;
+    }
+
+    .blog-page-text {
+        position: relative;
+        width: auto;
+        border-radius: 0 0 50px 50px;
+    }
 }
 
 
@@ -810,44 +846,65 @@ section.faq-page:before {
     .yjf-text.text-center {
         text-align: left !important;
     }
+
     .about-page-content {
-    position: relative;
-    width: auto;
-    border-radius: 0;
-    bottom: 0;
-    right: 0;
-}
-section.eys-section {
-    padding: 30px;
-}
-.eys-content h2 {
-    font-size: 29px !important;
-}
-.question-container.row {
-    gap: 80px;
-}
-section.mot-section {
-    padding: 30px;
-}
+        position: relative;
+        width: auto;
+        border-radius: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    section.eys-section {
+        padding: 30px;
+    }
+
+    .eys-content h2 {
+        font-size: 29px !important;
+    }
+
+    .question-container.row {
+        gap: 80px;
+    }
+
+    section.mot-section {
+        padding: 30px;
+    }
 
 
 
 
-section.faq-page {
-    padding: 140px 10px 40px;
-}
-.faq-page-container.row {
-    align-items: center;
-}
-.faq-page-left {
-    padding-right: 20px;
-}
-.faq-page-right-search input {
-    width: 377px;
-}
-.faq-page-right {
-    padding: 0;
-}
+    section.faq-page {
+        padding: 140px 10px 40px;
+    }
+
+    .faq-page-container.row {
+        align-items: center;
+    }
+
+    .faq-page-left {
+        padding-right: 20px;
+    }
+
+    .faq-page-right-search input {
+        width: 377px;
+    }
+
+    .faq-page-right {
+        padding: 0;
+    }
+
+
+
+
+
+    section.blog-page-section {
+        padding: 40px 20px;
+    }
+
+    .blog-page-text {
+        width: auto;
+    }
 }
 
 
