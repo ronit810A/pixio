@@ -1972,3 +1972,57 @@ ul.faq-page-left-ul a {
     padding: 0 20px 20px;
     line-height: 1.5rem;
 }
+
+
+
+
+/* =====================
+   blog-page-section
+   ===================== */
+
+section.blog-page-section {
+    padding: 100px;
+    background-color: var(--pink);
+}
+.blog-page-box {
+    text-align: left;
+    position: relative;
+    margin-bottom: 30px;
+}
+.blog-page-box img {
+    border-radius: 50px;
+}
+.blog-page-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 435px;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 30px;
+    border-radius: 0 50px;
+}
+.blog-page-text span {
+    background-color: var(--white);
+    color: var(--black);
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.blog-page-text h3 {
+    font-size: 24px;
+    padding: 20px 0;
+}
+.blog-page-text button {
+    color: var(--white);
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+button.blog-page-container-btn {
+    padding: 10px 30px;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 5px;
+    margin-top: 30px;
+}
