@@ -225,3 +225,74 @@ question.forEach(question => {
     }
   })
 })
+
+
+
+/*===============
+  filter-tab
+  ===============*/
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    // Filter buttons
+    const filterTabs = document.querySelectorAll(
+        ".product-content-text li"
+    );
+
+    // All products
+    const products = document.querySelectorAll(
+        ".product-item"
+    );
+
+
+    filterTabs.forEach(function (tab) {
+
+        tab.addEventListener("click", function () {
+
+            // Remove active class from all tabs
+            filterTabs.forEach(function (item) {
+                item.classList.remove("active");
+            });
+
+
+            // Add active class to clicked tab
+            this.classList.add("active");
+
+
+            // Get selected category
+            const filterValue = this.getAttribute(
+                "data-filter"
+            );
+
+
+            // Filter products
+            products.forEach(function (product) {
+
+                const productCategory =
+                    product.getAttribute("data-category");
+
+
+                if (
+                    filterValue === "all" ||
+                    productCategory === filterValue
+                ) {
+
+                    // Show product
+                    product.style.display = "block";
+
+                } else {
+
+                    // Hide product
+                    product.style.display = "none";
+
+                }
+
+            });
+
+        });
+
+    });
+
+});

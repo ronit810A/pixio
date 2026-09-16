@@ -508,8 +508,9 @@ ul.product-content-text {
 }
 
 ul.product-content-text li {
-    padding: 5px 22px;
-    font-size: 18px;
+    margin: 5px 23px;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 li.product-content-text-a {
@@ -532,6 +533,7 @@ li.product-content-text-a {
 
 img.products-box-imga {
     border-radius: 30px;
+    width: 100%;
 }
 
 .products-box-img p {
@@ -590,8 +592,56 @@ button.products-box-text-btn:hover {
 .products-box-text-a p {
     font-size: 25px;
 }
+/* =================================
+   NEW PRODUCT FILTER CSS
+   Existing CSS ko touch nahi karna
+================================= */
 
-/* adv-section */
+.product-filter {
+    cursor: pointer;
+}
+
+
+/* Active filter */
+
+.product-filter.active {
+    color: #000;
+}
+
+
+/* Active underline */
+
+.product-filter.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+
+
+/* Product filter animation */
+
+.product-item {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+
+/* Hide animation */
+
+.product-item.filter-hide {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+
+
+
+/* ============
+   adv-section
+   ============*/
 .adv-section {
     position: relative;
     padding: 50px;
@@ -2102,3 +2152,4 @@ form.contact-page-form button {
     border-radius: 10px;
     margin-top: 40px;
 }
+
