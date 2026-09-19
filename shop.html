@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="nav-header">
+        <div class="container">
+            <div class="row nav-bar">
+                <div class="col-md-2">
+                    <div class="nav-bar-logo">
+                        <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="nav-bar-link">
+                        <!-- Mobile Toggle -->
+                        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" type="button"><i
+                                class="fa-solid fa-bars"></i></button>
+                        <!-- Navigation -->
+                        <div class="nav-link" id="navMenu">
+                            <ul class="nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="price.html">Price</a></li>
+                                <li><a href="faq.html">FAQs</a></li>
+                                <li><a href="team.html">Our Team</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="nav-bar-but">
+                        <button>login/ registration</button>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="nav-bar-icons row">
+                        <div class="col-sm-4"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div class="col-sm-4"><i class="fa-regular fa-heart"></i></div>
+                        <div class="col-sm-4"><i class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- price-page -->
+    <section class="price-page">
+        <div class="container">
+            <div class="price-cotainer text-center">
+                <h2>Shop List</h2>
+                <ul class="price-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i>Shop List</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--====================
+        shop-now-section 
+    ======================-->
+    <section class="shop-now-section">
+        <div class="container">
+            <div class="row shop-now-container">
+                <div class="col-lg-3">
+                    <div class="shop-now-content-a">
+                        <div class="shop-now-content-a-filter">
+                            <p><i class="fa-solid fa-sliders"></i> Filter</p>
+                        </div>
+                        <div class="shop-now-content-a-search">
+                            <input type="text" name="search" placeholder="Search Product">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="shop-now-content-a-price">
+                            <h5>Price</h5>
+                            <div class="shop-now-content-a-price-p">
+                                <p>Min Price:$43</p>
+                                <p>Max Price:$357</p>
+                            </div>
+                        </div>
+                        <div class="shop-now-content-a-color">
+                            <h5>Color</h5>
+                            <div class="color-options">
+
+                                <label class="color-radio black">
+                                    <input type="radio" name="color" value="black" checked>
+                                    <span></span>
+                                </label>
+
+                                <label class="color-radio blue">
+                                    <input type="radio" name="color" value="blue">
+                                    <span></span>
+                                </label>
+
+                                <label class="color-radio green">
+                                    <input type="radio" name="color" value="green">
+                                    <span></span>
+                                </label>
+
+                                <label class="color-radio pink">
+                                    <input type="radio" name="color" value="pink">
+                                    <span></span>
+                                </label>
+
+                                <label class="color-radio red">
+                                    <input type="radio" name="color" value="red">
+                                    <span></span>
+                                </label>
+
+                                <label class="color-radio mint">
+                                    <input type="radio" name="color" value="mint">
+                                    <span></span>
+                                </label>
+
+                                <label class="color-radio purple">
+                                    <input type="radio" name="color" value="purple">
+                                    <span></span>
+                                </label>
+
+                                <label class="color-radio pink2">
+                                    <input type="radio" name="color" value="pink2">
+                                    <span></span>
+                                </label>
+
+                                <label class="color-radio blue2">
+                                    <input type="radio" name="color" value="blue2">
+                                    <span></span>
+                                </label>
+
+                                <label class="color-radio lightgreen">
+                                    <input type="radio" name="color" value="lightgreen">
+                                    <span></span>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="shop-now-content-a-size">
+                            <h5>Size</h5>
+                            <div class="number-radio">
+                                <label>
+                                    <input type="radio" name="number" value="4" checked>
+                                    <span>4</span>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="number" value="6">
+                                    <span>6</span>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="number" value="8">
+                                    <span>8</span>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="number" value="10">
+                                    <span>10</span>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="number" value="12">
+                                    <span>12</span>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="number" value="14">
+                                    <span>14</span>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="number" value="16">
+                                    <span>16</span>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="number" value="18">
+                                    <span>18</span>
+                                </label>
+
+                                <label>
+                                    <input type="radio" name="number" value="20">
+                                    <span>20</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="shop-now-content-a-category">
+                            <h5>Category</h5>
+                            <ul class="shop-now-content-a-category-ul">
+                                <li>
+                                    <p>Dresses</p>
+                                    <span>(10)</span>
+                                </li>
+                                <li>
+                                    <p>Top & Blouses</p>
+                                    <span>(06)</span>
+                                </li>
+                                <li>
+                                    <p>Boots</p>
+                                    <span>(16)</span>
+                                </li>
+                                <li>
+                                    <p>Jewelry</p>
+                                    <span>(09)</span>
+                                </li>
+                                <li>
+                                    <p>Makeup</p>
+                                    <span>(32)</span>
+                                </li>
+                                <li>
+                                    <p>Fragrances</p>
+                                    <span>(22)</span>
+                                </li>
+                                <li>
+                                    <p>Shaving & Grooming</p>
+                                    <span>(08)</span>
+                                </li>
+                                <li>
+                                    <p>Jacket</p>
+                                    <span>(19)</span>
+                                </li>
+                                <li>
+                                    <p>Coat</p>
+                                    <span>(20)</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="shop-now-content-a-tags">
+                            <h5>Tags</h5>
+                            <button type="button"><a href="#">Vintage</a></button>
+                            <button type="button"><a href="#">Wedding</a></button>
+                            <button type="button"><a href="#">Cotton</a></button>
+                            <button type="button"><a href="#">Liner</a></button>
+                            <button type="button"><a href="#">Navi</a></button>
+                            <button type="button"><a href="#">Urban</a></button>
+                            <button type="button"><a href="#">Business Meeting</a></button>
+                            <button type="button"><a href="#">Formal</a></button>
+                        </div>
+                        <div class="shop-now-content-a-rest">
+                            <button>RESET</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="shop-now-content-b">
+                        <div class="shop-now-content-b-filter ">
+                            <div class="filter-left-area">
+                                <span>Showing 1–5 Of 50 Results</span>
+                            </div>
+                            <div class="filter-right-area">
+                                <div class="shop-now-content-b-dropdown">
+                                    <div class="custom-dropdown" id="custom-dropdown-a">
+                                        <button class="dropdown-btn" id="dropdown-btn-a">
+                                            <span class="selected-text" id="selected-text-a">Latest</span>
+                                            <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+                                        </button>
+
+                                        <div class="dropdown-menu" id="dropdown-menu-a">
+                                            <a href="#">Latest</a>
+                                            <a href="#">Popularity</a>
+                                            <a href="#">Average rating</a>
+                                            <a href="#">Latest</a>
+                                            <a href="#">Low to high</a>
+                                            <a href="#">high to Low</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="shop-now-content-b-dropdown">
+                                    <div class="custom-dropdown" id="custom-dropdown">
+                                        <button class="dropdown-btn" id="dropdown-btn">
+                                            <span class="selected-text" id="selected-text">Products</span>
+                                            <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span>
+                                        </button>
+
+                                        <div class="dropdown-menu" id="dropdown-menu">
+                                            <a href="#">Products</a>
+                                            <a href="#">9 Products</a>
+                                            <a href="#">12 Products</a>
+                                            <a href="#">20 Products</a>
+                                            <a href="#">14 Products</a>
+                                            <a href="#">25 Products</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top row">
+                <div class="col-md-3">
+                    <div class="footer-box-a">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+                        </div>
+                        <ul>
+                            <li>Address : 451 Wall Street, UK, London</li>
+                            <li>E-mail : example@info.com</li>
+                            <li>Phone : (064) 332-1233</li>
+                        </ul>
+                        <form action="" class="footer-form">
+                            <h5>subscribe to our newsletter</h5>
+                            <input type="email" name="email" placeholder="Your Email Address">
+                            <button><i class="fa-solid fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-box-b">
+                        <h4>Recent Posts</h4>
+                        <div class="row footer-box-b-content">
+                            <div class="col-sm-3">
+                                <img src="images/footer1.png" alt="img" width="100%" class="footer-box-b-img">
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="footer-box-b-text">
+                                    <h5>Cozy Knit Cardigan Sweater</h5>
+                                    <p>July 23, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row footer-box-b-content">
+                            <div class="col-sm-3">
+                                <img src="images/footer2.png" alt="img" width="100%" class="footer-box-b-img">
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="footer-box-b-text">
+                                    <h5>Cozy Knit Cardigan Sweater</h5>
+                                    <p>July 23, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row footer-box-b-content">
+                            <div class="col-sm-3">
+                                <img src="images/footer3.png" alt="img" width="100%" class="footer-box-b-img">
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="footer-box-b-text">
+                                    <h5>Cozy Knit Cardigan Sweater</h5>
+                                    <p>July 23, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-box-c">
+                        <h4>Our Store</h4>
+                        <ul>
+                            <li><a href="#">New York</a></li>
+                            <li><a href="#">London SF</a></li>
+                            <li><a href="#">Edinburg</a></li>
+                            <li><a href="#">los Angles</a></li>
+                            <li><a href="#">Chicago</a></li>
+                            <li><a href="#">Las Vegas</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-box-c">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Edinburg</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Latest News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-box-c">
+                        <h4>Footer Menu</h4>
+                        <ul>
+                            <li><a href="#">Instagram profile</a></li>
+                            <li><a href="#">New Collection</a></li>
+                            <li><a href="#">Edinburg</a></li>
+                            <li><a href="#">Woman Dress</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-end text-center">
+                <p>© 2026 DexignZone Theme. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- script--js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scrip.js"></script>
+
+</body>
+
+</html>

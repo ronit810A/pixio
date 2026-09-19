@@ -296,3 +296,62 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+
+
+
+
+/*====================
+   shop-now-dropdowns
+  ====================*/
+
+
+const dropdown = document.querySelector("#custom-dropdown-a");
+const dropdownBtn = document.querySelector("#dropdown-btn-a");
+const options = document.querySelectorAll("#dropdown-menu-a a");
+const selectedText = document.querySelector("#selected-text-a");
+
+dropdownBtn.addEventListener("click", function () {
+    dropdown.classList.toggle("active");
+});
+
+options.forEach(function (option) {
+    option.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        selectedText.textContent = this.textContent;
+        dropdown.classList.remove("active");
+    });
+});
+
+document.addEventListener("click", function (e) {
+    if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove("active");
+    }
+});
+
+
+const dropdowna = document.querySelector("#custom-dropdown");
+const dropdownBtna = document.querySelector("#dropdown-btn");
+const optionsa = document.querySelectorAll("#dropdown-menu a");
+const selectedTexta = document.querySelector("#selected-text");
+
+dropdownBtna.addEventListener("click", function () {
+    dropdowna.classList.toggle("active");
+});
+
+optionsa.forEach(function (option) {
+    option.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        selectedTexta.textContent = this.textContent;
+        dropdowna.classList.remove("active");
+    });
+});
+
+documenta.addEventListener("click", function (e) {
+    if (!dropdowna.contains(e.target)) {
+        dropdowna.classList.remove("active");
+    }
+});
