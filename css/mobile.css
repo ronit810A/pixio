@@ -565,6 +565,30 @@
     form.contact-page-form button {
         padding: 10px 134px;
     }
+
+
+
+
+
+    .shop-now-content-a {
+        display: none;
+    }
+
+    .shop-now-content-b-content-box-2 {
+        display: none;
+    }
+
+    .shop-now-content-b-content-box-3 .col-sm-2 {
+        width: 50% !important;
+    }
+
+    .shop-now-content-b-content-box-3 .col-sm-6 {
+        width: 50% !important;
+    }
+
+    .shop-now-content-b-content-box-3 .col-sm-4 {
+        margin-top: 20px;
+    }
 }
 
 
@@ -944,6 +968,20 @@
 
     form.contact-page-form {
         margin-left: 0;
+    }
+
+
+
+
+
+
+
+    .shop-now-content-a {
+        display: none;
+    }
+
+    .shop-now-container .col-lg-9 {
+        width: 100% !important;
     }
 }
 
