@@ -2188,6 +2188,7 @@ section.shop-now-section {
     display: flex;
     align-items: center;
 }
+
 .shop-now-content-a h5 {
     margin-bottom: 20px;
 }
@@ -2222,7 +2223,7 @@ section.shop-now-section {
 }
 
 .shop-now-content-a-color {
-    margin: 30px 0;
+    margin: 50px 0;
 }
 
 .color-options {
@@ -2300,76 +2301,82 @@ section.shop-now-section {
 }
 
 .shop-now-content-a-size {
-    margin: 30px 0;
+    margin: 50px 0;
 }
 
 .number-radio {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  max-width: 330px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 330px;
 }
 
 .number-radio label {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .number-radio input {
-  display: none;
+    display: none;
 }
 
 .number-radio span {
-  width: 35px !important;
-  height: 35px;
-  border: 1px solid #222;
-  border-radius: 50%;
+    width: 35px !important;
+    height: 35px;
+    border: 1px solid #222;
+    border-radius: 50%;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-  font-size: 17px;
-  background: white;
-  color: #222;
+    font-size: 17px;
+    background: white;
+    color: #222;
 
-  transition: 0.2s;
+    transition: 0.2s;
 }
 
 /* Selected button */
-.number-radio input:checked + span {
-  background: #000;
-  color: #fff;
-  border-color: #000;
+.number-radio input:checked+span {
+    background: #000;
+    color: #fff;
+    border-color: #000;
 }
 
 
 ul.shop-now-content-a-category-ul {
     padding: 0;
 }
+
 ul.shop-now-content-a-category-ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 0;
+    padding: 10px 0;
 }
+
 ul.shop-now-content-a-category-ul p {
     margin: 0;
     font-size: 14px;
 }
+
 .shop-now-content-a-tags {
-    margin: 30px 0;
+    margin: 90px 0;
 }
+
 .shop-now-content-a-tags button {
     color: var(--black);
     padding: 7px 10px;
     border: 1px solid black;
     border-radius: 5px;
-    margin: 3px;
+    margin: 10px 3px;
     font-size: 14px;
 }
-.shop-now-content-a-tags a{
+
+.shop-now-content-a-tags a {
     color: var(--black);
 }
+
 .shop-now-content-a-rest button {
     background-color: var(--black);
     color: var(--white);
@@ -2382,10 +2389,12 @@ ul.shop-now-content-a-category-ul p {
     align-items: center;
     justify-content: space-between;
 }
+
 .filter-right-area {
     display: flex;
     align-items: center;
 }
+
 .custom-dropdown {
     position: relative;
     width: 156px;
@@ -2443,13 +2452,83 @@ ul.shop-now-content-a-category-ul p {
 .custom-dropdown.active .arrow {
     transform: rotate(180deg);
 }
-
-
-
+.shop-now-content-b-content.row {
+    margin-top: 30px;
+}
+.shop-now-content-b-content-img {
+    height: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+}
 .shop-now-content-b-content-box-1 {
     display: flex;
     justify-content: space-between;
+    margin: 20px 0;
 }
+
 .shop-now-content-b-content-box-a p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.shop-now-content-b-content-box-icon {
     font-size: 13px;
+}
+
+.light-star {
+    color: var(--gray);
+}
+
+.shop-now-content-b-content-box-2 {
+    margin: 20px 0;
+}
+
+.shop-now-content-b-content-box-2 p {
+    margin: 0;
+    font-size: 15px;
+    color: var(--graya);
+}
+
+.shop-now-content-b-content-box-3.row {
+    align-items: center;
+}
+
+.shop-now-content-b-content-box-b p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.shop-now-content-b-content-box-b span {
+    font-size: 22px;
+}
+
+.shop-now-content-b-content-box-c p {
+    font-size: 15px;
+    margin: 0;
+}
+
+.shop-now-content-b-content-box-d {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-a {
+    padding: 10px 20px;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 10px;
+}
+
+.btn-b {
+    border: 1px solid var(--black);
+    padding: 10px;
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 10px;
+}
+
+.btn-b.active {
+    background-color: #ff0044;
+    color: white;
 }
