@@ -2443,3 +2443,13 @@ ul.shop-now-content-a-category-ul p {
 .custom-dropdown.active .arrow {
     transform: rotate(180deg);
 }
+
+
+
+.shop-now-content-b-content-box-1 {
+    display: flex;
+    justify-content: space-between;
+}
+.shop-now-content-b-content-box-a p {
+    font-size: 13px;
+}
