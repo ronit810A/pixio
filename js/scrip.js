@@ -27,7 +27,7 @@ document.querySelectorAll(".nav a").forEach(function (link) {
 
 /* ================
      map-slider
-   ================*/  
+   ================*/
 $('.map-slider').slick({
   dots: false,
   infinite: true,
@@ -210,18 +210,18 @@ $('.post-slider').slick({
         faq-page         
   ======================*/
 
-  let question = document.querySelectorAll(".faq-page-right-question");
+let question = document.querySelectorAll(".faq-page-right-question");
 
 question.forEach(question => {
   question.addEventListener("click", event => {
     const active = document.querySelector(".faq-page-right-question.active");
-    if(active && active !== question ) {
+    if (active && active !== question) {
       active.classList.toggle("active");
       active.nextElementSibling.style.maxHeight = 0;
     }
     question.classList.toggle("active");
     const answer = question.nextElementSibling;
-    if(question.classList.contains("active")){
+    if (question.classList.contains("active")) {
       answer.style.maxHeight = answer.scrollHeight + "px";
     } else {
       answer.style.maxHeight = 0;
@@ -239,64 +239,64 @@ question.forEach(question => {
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    // Filter buttons
-    const filterTabs = document.querySelectorAll(
-        ".product-content-text li"
-    );
+  // Filter buttons
+  const filterTabs = document.querySelectorAll(
+    ".product-content-text li"
+  );
 
-    // All products
-    const products = document.querySelectorAll(
-        ".product-item"
-    );
-
-
-    filterTabs.forEach(function (tab) {
-
-        tab.addEventListener("click", function () {
-
-            // Remove active class from all tabs
-            filterTabs.forEach(function (item) {
-                item.classList.remove("active");
-            });
+  // All products
+  const products = document.querySelectorAll(
+    ".product-item"
+  );
 
 
-            // Add active class to clicked tab
-            this.classList.add("active");
+  filterTabs.forEach(function (tab) {
+
+    tab.addEventListener("click", function () {
+
+      // Remove active class from all tabs
+      filterTabs.forEach(function (item) {
+        item.classList.remove("active");
+      });
 
 
-            // Get selected category
-            const filterValue = this.getAttribute(
-                "data-filter"
-            );
+      // Add active class to clicked tab
+      this.classList.add("active");
 
 
-            // Filter products
-            products.forEach(function (product) {
+      // Get selected category
+      const filterValue = this.getAttribute(
+        "data-filter"
+      );
 
-                const productCategory =
-                    product.getAttribute("data-category");
+
+      // Filter products
+      products.forEach(function (product) {
+
+        const productCategory =
+          product.getAttribute("data-category");
 
 
-                if (
-                    filterValue === "all" ||
-                    productCategory === filterValue
-                ) {
+        if (
+          filterValue === "all" ||
+          productCategory === filterValue
+        ) {
 
-                    // Show product
-                    product.style.display = "block";
+          // Show product
+          product.style.display = "block";
 
-                } else {
+        } else {
 
-                    // Hide product
-                    product.style.display = "none";
+          // Hide product
+          product.style.display = "none";
 
-                }
+        }
 
-            });
-
-        });
+      });
 
     });
+
+  });
 
 });
 
@@ -316,22 +316,22 @@ const options = document.querySelectorAll("#dropdown-menu-a a");
 const selectedText = document.querySelector("#selected-text-a");
 
 dropdownBtn.addEventListener("click", function () {
-    dropdown.classList.toggle("active");
+  dropdown.classList.toggle("active");
 });
 
 options.forEach(function (option) {
-    option.addEventListener("click", function (e) {
-        e.preventDefault();
+  option.addEventListener("click", function (e) {
+    e.preventDefault();
 
-        selectedText.textContent = this.textContent;
-        dropdown.classList.remove("active");
-    });
+    selectedText.textContent = this.textContent;
+    dropdown.classList.remove("active");
+  });
 });
 
-document.addEventListener("click", function (e) { 
-    if (!dropdown.contains(e.target)) {
-        dropdown.classList.remove("active");
-    }
+document.addEventListener("click", function (e) {
+  if (!dropdown.contains(e.target)) {
+    dropdown.classList.remove("active");
+  }
 });
 
 
@@ -341,22 +341,22 @@ const optionsa = document.querySelectorAll("#dropdown-menu a");
 const selectedTexta = document.querySelector("#selected-text");
 
 dropdownBtna.addEventListener("click", function () {
-    dropdowna.classList.toggle("active");
+  dropdowna.classList.toggle("active");
 });
 
 optionsa.forEach(function (option) {
-    option.addEventListener("click", function (e) {
-        e.preventDefault();
+  option.addEventListener("click", function (e) {
+    e.preventDefault();
 
-        selectedTexta.textContent = this.textContent;
-        dropdowna.classList.remove("active");
-    });
+    selectedTexta.textContent = this.textContent;
+    dropdowna.classList.remove("active");
+  });
 });
 
 document.addEventListener("click", function (e) {
-    if (!dropdowna.contains(e.target)) {
-        dropdowna.classList.remove("active");
-    }
+  if (!dropdowna.contains(e.target)) {
+    dropdowna.classList.remove("active");
+  }
 });
 
 
@@ -364,3 +364,43 @@ document.addEventListener("click", function (e) {
 
 
 
+/*=======================
+   cart-page
+   ====================*/
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const quantityBoxes = document.querySelectorAll(".product-quantity-box");
+
+  quantityBoxes.forEach(function (box) {
+
+    const minusBtn = box.querySelector(".minus");
+    const plusBtn = box.querySelector(".plus");
+    const quantityNum = box.querySelector(".product-quantity-num");
+
+    plusBtn.addEventListener("click", function () {
+
+      let quantity = parseInt(quantityNum.textContent);
+
+      quantity = quantity + 1;
+
+      quantityNum.textContent = quantity;
+
+    });
+
+
+    minusBtn.addEventListener("click", function () {
+
+      let quantity = parseInt(quantityNum.textContent);
+
+      if (quantity > 0) {
+        quantity = quantity - 1;
+      }
+
+      quantityNum.textContent = quantity;
+
+    });
+
+  });
+
+});

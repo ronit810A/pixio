@@ -425,49 +425,9 @@
     </footer>
 
 
-    <script>
-
-        document.addEventListener("DOMContentLoaded", function () {
-
-            const quantityBoxes = document.querySelectorAll(".product-quantity-box");
-
-            quantityBoxes.forEach(function (box) {
-
-                const minusBtn = box.querySelector(".minus");
-                const plusBtn = box.querySelector(".plus");
-                const quantityNum = box.querySelector(".product-quantity-num");
-
-                plusBtn.addEventListener("click", function () {
-
-                    let quantity = parseInt(quantityNum.textContent);
-
-                    quantity = quantity + 1;
-
-                    quantityNum.textContent = quantity;
-
-                });
-
-
-                minusBtn.addEventListener("click", function () {
-
-                    let quantity = parseInt(quantityNum.textContent);
-
-                    if (quantity > 0) {
-                        quantity = quantity - 1;
-                    }
-
-                    quantityNum.textContent = quantity;
-
-                });
-
-            });
-
-        });
-    </script>
-
-    <!-- 
+    
     <script src="js/bootstrap.bundle.min.js"></script>
-   -->
+    <script src="js/scrip.js"></script>
 
 
 
