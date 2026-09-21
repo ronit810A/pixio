@@ -589,6 +589,37 @@
     .shop-now-content-b-content-box-3 .col-sm-4 {
         margin-top: 20px;
     }
+
+
+
+
+
+
+    section.cart-section {
+    padding: 10px;
+}
+.cart-coupon-btn {
+    text-align: left;
+    margin-top: 20px;
+}
+button.cart-offer-btn {
+    padding: 11px 69px;
+}
+button.cart-order-btn {
+    padding: 11px 107px;
+}
+.cart-enjoy-product-a .col-sm-3 {
+    width: 20%;
+}
+.cart-enjoy-product-a .col-sm-9 {
+    width: 80%;
+}
+.cart-enjoy-product-b .col-sm-3 {
+    width: 20%;
+}
+.cart-enjoy-product-b .col-sm-9 {
+    width: 80%;
+}
 }
 
 
