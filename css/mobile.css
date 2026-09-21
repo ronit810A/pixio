@@ -1132,11 +1132,6 @@ button.cart-order-btn {
 
 /* Small Mobile */
 @media (max-width: 480px) {
-
-    .container {
-        padding: 0 15px;
-    }
-
     .logo a {
         font-size: 21px;
     }
