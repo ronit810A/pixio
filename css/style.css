@@ -2452,14 +2452,17 @@ ul.shop-now-content-a-category-ul p {
 .custom-dropdown.active .arrow {
     transform: rotate(180deg);
 }
+
 .shop-now-content-b-content.row {
     margin-top: 30px;
 }
+
 .shop-now-content-b-content-img {
     height: 300px;
     border-radius: 30px;
     overflow: hidden;
 }
+
 .shop-now-content-b-content-box-1 {
     display: flex;
     justify-content: space-between;
@@ -2534,46 +2537,172 @@ ul.shop-now-content-a-category-ul p {
 }
 
 
+/* =========================
+         cart-section
+===========================*/
 
-
-
-
-
-
-
-
-
-.quantity-box {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+section.cart-section {
+    padding: 50px;
+    background-color: var(--pink);
 }
 
-.qty-btn {
-    width: 50px;
-    height: 50px;
-    border: 1px solid #000;
+table.cart-table {
+    width: 100%;
+}
+tr {
+    border-bottom: 1px solid var(--gray) !important;
+}
+
+th {
+    font-weight: 700;
+    padding: 20px 20px 20px 0;
+}
+
+td {
+    padding: 20px 20px 20px 0;
+    font-weight: 500;
+}
+
+
+td.product-img img {
+    width: 80px;
+    border-radius: 20px;
+}
+td.product-price {
+    color: var(--graya);
+}
+
+.product-quantity-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.product-qty-btn {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background-color: #000;
-    color: #fff;
+    background: var(--black);
     font-size: 28px;
     line-height: 1;
-    cursor: pointer;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: var(--white);
 }
 
-.quantity {
-    width: 50px !important;
-    height: 50px;
-    border: 1px solid #000;
-    border-radius: 50%;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.product-qty-btn:hover {
+    background: #000;
+    color: #fff;
+}
 
+.product-quantity-num {
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    text-align: center;
     font-size: 16px;
+    padding: 8px 16px;
+}
+td.product-crose {
+    font-size: 38px;
+    padding: 0;
+}
+.cart-coupon {
+    padding: 30px 0;
+    align-items: center;
+}
+.cart-coupon-add {
+    position: relative;
+}
+.cart-coupon-add input {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 17px;
+    border: 1px solid var(--black);
+    border-radius: 8px;
+}
+.cart-coupon-add button {
+    position: absolute;
+    right: 18px;
+    top: 10px;
+}
+.cart-coupon-btn {
+    text-align: right;
+}
+.cart-coupon-btn button {
+    padding: 10px 20px;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 10px;
+}
+.cart-right-content h4 {
+    font-weight: 600;
+}
+.cart-right-box {
+    border: 1px solid var(--black);
+    border-radius: 30px;
+    padding: 30px;
+}
+button.cart-offer-btn {
+    padding: 11px 82px;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+}
+button.cart-offer-btn:hover {
+    color: var(--white);
+    background-color: var(--black);
+}
+.cart-enjoy-product-a.row {
+    margin: 30px 0;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    padding: 20px 10px;
+    align-items: center;
+}
+.cart-enjoy-product-a.row i {
+    font-size: 40px;
+}
+.cart-enjoy-product-a.row p {
+    margin: 0;
+    color: var(--graya);
+}
+.cart-enjoy-product-b.row {
+    margin: 30px 0;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    padding: 20px 10px;
+    align-items: center;
+}
+.cart-enjoy-product-b.row i {
+    font-size: 40px;
+    color: var(--graya);
+}
+.cart-enjoy-product-b.row p {
+    margin: 0;
+    color: var(--graya);
+    font-size: 14px;
+}
+.cart-price-save {
+    border-bottom: 1px solid var(--gray);
+}
+.cart-price-save p {
+    font-size: 18px;
+}
+.cart-box-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.cart-box-price p {
+    margin: 0;
+    font-size: 20px;
+}
+.cart-box-price span {
+    font-size: 26px;
+}
+button.cart-order-btn {
+    padding: 11px 122px;
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    color: var(--white);
+    background-color: var(--black);
 }

@@ -1,3 +1,6 @@
+
+
+
 const menuToggle = document.getElementById("menuToggle");
 const navMenu = document.getElementById("navMenu");
 
@@ -361,24 +364,3 @@ document.addEventListener("click", function (e) {
 
 
 
-/*======================
-    cart-section
-======================*/
-
-const minus = document.querySelector("#minus");
-const plus = document.querySelector("#plus");
-const quantity = document.querySelector("#quantity");
-
-let count = 0;
-
-plus.addEventListener("click", function () {
-    count++;
-    quantity.textContent = count;
-});
-
-minus.addEventListener("click", function () {
-    if (count > 0) {
-        count--;
-        quantity.textContent = count;
-    }
-});
