@@ -629,7 +629,7 @@ button.cart-order-btn {
 
 
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1124px) {
 
     .bwf-section {
         padding: 100px 20px 20px;
@@ -1014,6 +1014,22 @@ button.cart-order-btn {
     .shop-now-container .col-lg-9 {
         width: 100% !important;
     }
+
+
+
+
+
+
+
+    button.cart-offer-btn {
+    padding: 11px 24px;
+}
+.cart-enjoy-product-b.row p {
+    display: none;
+}
+button.cart-order-btn {
+    padding: 11px 63px;
+}
 }
 
 
