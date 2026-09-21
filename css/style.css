@@ -2145,7 +2145,7 @@ form.contact-page-form {
     color: var(--white);
 }
 
-.contact-page-input-a input {
+.contact-page-input-a textarea {
     width: 100%;
     height: 140px;
     background: transparent;
