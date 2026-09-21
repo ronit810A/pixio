@@ -325,7 +325,7 @@ options.forEach(function (option) {
     });
 });
 
-document.addEventListener("click", function (e) {
+document.addEventListener("click", function (e) { 
     if (!dropdown.contains(e.target)) {
         dropdown.classList.remove("active");
     }
@@ -350,8 +350,35 @@ optionsa.forEach(function (option) {
     });
 });
 
-documenta.addEventListener("click", function (e) {
+document.addEventListener("click", function (e) {
     if (!dropdowna.contains(e.target)) {
         dropdowna.classList.remove("active");
+    }
+});
+
+
+
+
+
+
+/*======================
+    cart-section
+======================*/
+
+const minus = document.querySelector("#minus");
+const plus = document.querySelector("#plus");
+const quantity = document.querySelector("#quantity");
+
+let count = 0;
+
+plus.addEventListener("click", function () {
+    count++;
+    quantity.textContent = count;
+});
+
+minus.addEventListener("click", function () {
+    if (count > 0) {
+        count--;
+        quantity.textContent = count;
     }
 });
