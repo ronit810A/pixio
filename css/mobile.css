@@ -596,30 +596,75 @@
 
 
     section.cart-section {
-    padding: 10px;
-}
-.cart-coupon-btn {
-    text-align: left;
-    margin-top: 20px;
-}
-button.cart-offer-btn {
-    padding: 11px 69px;
-}
-button.cart-order-btn {
-    padding: 11px 107px;
-}
-.cart-enjoy-product-a .col-sm-3 {
-    width: 20%;
-}
-.cart-enjoy-product-a .col-sm-9 {
-    width: 80%;
-}
-.cart-enjoy-product-b .col-sm-3 {
-    width: 20%;
-}
-.cart-enjoy-product-b .col-sm-9 {
-    width: 80%;
-}
+        padding: 10px;
+    }
+
+    .cart-coupon-btn {
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    button.cart-offer-btn {
+        padding: 11px 69px;
+    }
+
+    .cart-enjoy-product-a .col-sm-3 {
+        width: 20%;
+    }
+
+    .cart-enjoy-product-a .col-sm-9 {
+        width: 80%;
+    }
+
+    .cart-enjoy-product-b .col-sm-3 {
+        width: 20%;
+    }
+
+    .cart-enjoy-product-b .col-sm-9 {
+        width: 80%;
+    }
+
+
+
+
+
+
+
+    section.order-section {
+        padding: 10px;
+    }
+
+    .order-faq-question {
+        font-size: 11px;
+    }   
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row .form-group {
+        width: 100%;
+    }
+
+    .order-right-box-suit .col-sm-3 {
+        width: 25%;
+    }
+
+    .order-right-box-suit .col-sm-6 {
+        width: 50%;
+    }
+
+    .order-right-box-subtotal .col-sm-6 {
+        width: 50%;
+    }
+
+    .order-right-box-shipping .col-sm-6 {
+        width: 50%;
+    }
+
+    .order-right-box-total .col-sm-6 {
+        width: 50%;
+    }
 }
 
 
@@ -1022,14 +1067,33 @@ button.cart-order-btn {
 
 
     button.cart-offer-btn {
-    padding: 11px 24px;
-}
-.cart-enjoy-product-b.row p {
-    display: none;
-}
-button.cart-order-btn {
-    padding: 11px 63px;
-}
+        padding: 11px 24px;
+    }
+
+    .cart-enjoy-product-b.row p {
+        display: none;
+    }
+
+
+
+
+
+    section.order-section {
+        padding: 50px;
+    }
+
+    .order-container .col-md-8 {
+        width: 100%;
+    }
+
+    .order-container .col-md-4 {
+        width: 100%;
+    }
+
+    .order-right-box-suit img {
+        width: 100px;
+    }
+
 }
 
 

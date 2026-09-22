@@ -2654,9 +2654,10 @@ td.product-crose {
 }
 
 button.cart-offer-btn {
-    padding: 11px 82px;
+    padding: 11px;
     border: 1px solid var(--black);
     border-radius: 10px;
+    width: 100%;
 }
 
 button.cart-offer-btn:hover {
@@ -2725,11 +2726,12 @@ button.cart-offer-btn:hover {
 }
 
 button.cart-order-btn {
-    padding: 11px 122px;
+    padding: 11px;
     border: 1px solid var(--black);
     border-radius: 10px;
     color: var(--white);
     background-color: var(--black);
+    width: 100%;
 }
 
 
@@ -2954,4 +2956,208 @@ textarea {
 }
 .form-group.order-notes textarea#order-notes {
     margin-top: 14px;
+    padding: 10px;
+}
+
+
+.order-right-content h2 {
+    font-size: 22px !important;
+    margin-bottom: 22px;
+    font-weight: 500;
+}
+.order-right-box {
+    border: 1px solid var(--black);
+    padding: 30px;
+    border-radius: 30px;
+}
+.order-right-box-suit.row {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--gray);
+    align-items: center;
+}
+.order-right-box-suit img {
+    border-radius: 20px;
+}
+.order-right-box-suit h5 {
+    font-size: 16px;
+}
+.order-right-box-suit span {
+    font-size: 18px;
+    color: var(--graya);
+}
+.order-right-box-subtotal {
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--gray);
+    color: var(--graya);
+    font-size: 17px;
+}
+.order-right-box-subtotal p {
+    margin: 0;
+}
+.order-right-box-subtotal .col-sm-6.span {
+    text-align: right;
+}
+.order-right-box-shipping {
+    align-items: end;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--gray);
+    font-size: 17px;
+}
+.order-right-box-shipping h5 {
+    margin-bottom: 20px;
+}
+.order-right-box-shipping .col-sm-6.span {
+    text-align: right;
+    color: var(--graya);
+}
+.order-right-box-radio {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px;
+}
+.order-right-box-radio input {
+    width: 21px;
+    accent-color: var(--white); 
+    height: 30px;
+}
+.order-right-box-radio label {
+    font-size: 15px;
+    color: var(--graya);
+}
+.order-right-box-total {
+    align-items: center;
+    padding: 15px 0;
+    color: var(--graya);
+}
+.order-right-box-total p {
+    margin: 0;
+}
+.order-right-box-total .col-sm-6.span {
+    text-align: right;
+    font-size: 24px;
+    color: #000000ba;
+}
+
+
+
+.payment-faq {
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--gray);
+}
+
+.payment-faq-item {
+    padding: 5px 0;
+}
+
+.payment-faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.payment-radio {
+    width: 17px !important;
+    height: 17px;
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+/* Red selected effect */
+.payment-faq-item.active .payment-radio {
+    border: 3px solid #000;
+}
+
+.payment-faq-content {
+    display: none;
+    padding: 10px 0 5px 32px;
+}
+
+.payment-faq-content p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* Open content */
+.payment-faq-item.active .payment-faq-content {
+    display: block;
+}
+
+.paypal-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 5px;
+    background: #fff;
+}
+
+.cards span {
+    font-size: 8px;
+    padding: 5px 3px;
+    border: 1px solid #ddd;
+}
+
+.paypal-right a {
+    color: #666;
+    text-decoration: underline;
+    font-size: 13px;
+}
+.order-right-box-p {
+    font-size: 13px;
+    color: var(--graya);
+}
+.order-right-box-p a {
+    color: var(--red);
+}
+.order-right-box-checkbox{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 5px;
+}
+
+.order-right-box-checkbox label {
+    margin: 10px 0;
+    line-height: 15px;
+    cursor: pointer;
+    font-size: 13px;
+    color: var(--graya);
+}
+.order-right-box-checkbox input {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+.order-right-box-checkbox input[type="checkbox"] {
+    accent-color: #CC0D39;
+}
+button.order-right-box-btn {
+    padding: 10px 20px;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 10px;
+    width: 100%;
 }

@@ -39,3 +39,27 @@ faqQuestion2.addEventListener("click", function () {
     }
 
 });
+
+
+    const faqQuestions = document.querySelectorAll(".payment-faq-question");
+
+    faqQuestions.forEach(function(question) {
+
+        question.addEventListener("click", function() {
+
+            const currentItem = question.parentElement;
+            const isOpen = currentItem.classList.contains("active");
+
+            // Sab close
+            faqQuestions.forEach(function(otherQuestion) {
+                otherQuestion.parentElement.classList.remove("active");
+            });
+
+            // Agar pehle closed tha to open karo
+            if (!isOpen) {
+                currentItem.classList.add("active");
+            }
+
+        });
+
+    });
