@@ -316,6 +316,8 @@ body {
     background-color: var(--white);
     position: absolute;
     bottom: 0;
+    text-decoration: none;
+    color: var(--black);
 }
 
 .shop-left-btn:hover {
