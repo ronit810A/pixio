@@ -2134,6 +2134,9 @@ form.contact-page-form {
     margin-bottom: -244px;
     position: relative;
 }
+form.contact-page-form label {
+    color: var(--white);
+}
 
 .contact-page-input input {
     width: 100%;
