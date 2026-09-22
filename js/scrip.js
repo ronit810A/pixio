@@ -28,6 +28,7 @@ document.querySelectorAll(".nav a").forEach(function (link) {
 /* ================
      map-slider
    ================*/
+if (window.jQuery && typeof window.jQuery.fn.slick === "function") {
 $('.map-slider').slick({
   dots: false,
   infinite: true,
@@ -202,6 +203,8 @@ $('.post-slider').slick({
   ]
 });
 
+}
+
 
 
 
@@ -315,6 +318,7 @@ const dropdownBtn = document.querySelector("#dropdown-btn-a");
 const options = document.querySelectorAll("#dropdown-menu-a a");
 const selectedText = document.querySelector("#selected-text-a");
 
+if (dropdown && dropdownBtn && selectedText) {
 dropdownBtn.addEventListener("click", function () {
   dropdown.classList.toggle("active");
 });
@@ -333,6 +337,7 @@ document.addEventListener("click", function (e) {
     dropdown.classList.remove("active");
   }
 });
+}
 
 
 const dropdowna = document.querySelector("#custom-dropdown");
@@ -340,6 +345,7 @@ const dropdownBtna = document.querySelector("#dropdown-btn");
 const optionsa = document.querySelectorAll("#dropdown-menu a");
 const selectedTexta = document.querySelector("#selected-text");
 
+if (dropdowna && dropdownBtna && selectedTexta) {
 dropdownBtna.addEventListener("click", function () {
   dropdowna.classList.toggle("active");
 });
@@ -358,6 +364,7 @@ document.addEventListener("click", function (e) {
     dropdowna.classList.remove("active");
   }
 });
+}
 
 
 
