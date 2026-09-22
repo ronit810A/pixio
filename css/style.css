@@ -2549,6 +2549,7 @@ section.cart-section {
 table.cart-table {
     width: 100%;
 }
+
 tr {
     border-bottom: 1px solid var(--gray) !important;
 }
@@ -2568,6 +2569,7 @@ td.product-img img {
     width: 80px;
     border-radius: 20px;
 }
+
 td.product-price {
     color: var(--graya);
 }
@@ -2601,17 +2603,21 @@ td.product-price {
     font-size: 16px;
     padding: 8px 16px;
 }
+
 td.product-crose {
     font-size: 38px;
     padding: 0;
 }
+
 .cart-coupon {
     padding: 30px 0;
     align-items: center;
 }
+
 .cart-coupon-add {
     position: relative;
 }
+
 .cart-coupon-add input {
     width: 100%;
     padding: 10px 20px;
@@ -2619,37 +2625,45 @@ td.product-crose {
     border: 1px solid var(--black);
     border-radius: 8px;
 }
+
 .cart-coupon-add button {
     position: absolute;
     right: 18px;
     top: 10px;
 }
+
 .cart-coupon-btn {
     text-align: right;
 }
+
 .cart-coupon-btn button {
     padding: 10px 20px;
     background-color: var(--black);
     color: var(--white);
     border-radius: 10px;
 }
+
 .cart-right-content h4 {
     font-weight: 600;
 }
+
 .cart-right-box {
     border: 1px solid var(--black);
     border-radius: 30px;
     padding: 30px;
 }
+
 button.cart-offer-btn {
     padding: 11px 82px;
     border: 1px solid var(--black);
     border-radius: 10px;
 }
+
 button.cart-offer-btn:hover {
     color: var(--white);
     background-color: var(--black);
 }
+
 .cart-enjoy-product-a.row {
     margin: 30px 0;
     border: 1px solid var(--black);
@@ -2657,13 +2671,16 @@ button.cart-offer-btn:hover {
     padding: 20px 10px;
     align-items: center;
 }
+
 .cart-enjoy-product-a.row i {
     font-size: 40px;
 }
+
 .cart-enjoy-product-a.row p {
     margin: 0;
     color: var(--graya);
 }
+
 .cart-enjoy-product-b.row {
     margin: 30px 0;
     border: 1px solid var(--black);
@@ -2671,38 +2688,270 @@ button.cart-offer-btn:hover {
     padding: 20px 10px;
     align-items: center;
 }
+
 .cart-enjoy-product-b.row i {
     font-size: 40px;
     color: var(--graya);
 }
+
 .cart-enjoy-product-b.row p {
     margin: 0;
     color: var(--graya);
     font-size: 14px;
 }
+
 .cart-price-save {
     border-bottom: 1px solid var(--gray);
 }
+
 .cart-price-save p {
     font-size: 18px;
 }
+
 .cart-box-price {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
+
 .cart-box-price p {
     margin: 0;
     font-size: 20px;
 }
+
 .cart-box-price span {
     font-size: 26px;
 }
+
 button.cart-order-btn {
     padding: 11px 122px;
     border: 1px solid var(--black);
     border-radius: 10px;
     color: var(--white);
     background-color: var(--black);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =====================
+   order-section
+   ===================== */
+section.order-section {
+    padding: 100px;
+    background-color: var(--pink);
+}
+
+.billing-section h2 {
+    font-size: 22px !important;
+    margin-bottom: 22px;
+    font-weight: 500;
+}
+
+/* FAQ Box */
+.order-faq-item {
+    margin-bottom: 28px;
+}
+
+/* Question */
+.order-faq-question {
+    padding: 12px 30px;
+    border: 1px solid #111;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Arrow */
+.order-faq-icon {
+    font-size: 22px;
+    transition: transform 0.3s;
+}
+
+.order-faq-question.active .order-faq-icon {
+    transform: rotate(180deg);
+}
+
+/* Answer */
+.order-faq-answer {
+    display: none;
+    padding: 0 0;
+}
+
+.order-faq-answer p {
+    font-size: 16px;
+    margin: 24px 24px 33px;
+}
+
+/* Coupon */
+.order-coupon-box {
+    padding: 25px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.order-coupon-box input {
+    padding: 12px 15px;
+    width: 250px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.order-coupon-box button {
+    padding: 12px 20px;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.country-field label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.country-select {
+    position: relative;
+    width: 100%;
+}
+
+.country-select select {
+    width: 100%;
+    height: 60px;
+    padding: 0 50px 0 25px;
+    border: 1px solid #222;
+    border-radius: 15px;
+    background: #fff;
+    font-size: 18px;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+}
+
+.select-arrow {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    pointer-events: none;
+    color: #222;
+}
+
+.billing-form {
+    width: 100%;
+    max-width: 100%;
+}
+
+.form-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-group input,
+select {
+    margin-bottom: 10px;
+}
+
+.form-row .form-group {
+    width: 50%;
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+    line-height: 10px;
+    margin-bottom: 4px;
+    color: #111;
+}
+
+input,
+select {
+    width: 100%;
+    border: 1px solid #111;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 5px 8px;
+    color: #222;
+    outline: none;
+    height: 50px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #111;
+}
+
+select {
+    cursor: pointer;
+}
+
+textarea {
+    height: 140px;
+    width: 100%;
+    border-radius: 10px;
+    resize: none;
+    padding-top: 7px;
+}
+
+.checkbox-group {
+    margin-top: -2px;
+    margin-bottom: 8px;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.checkbox-item input {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.checkbox-item input[type="checkbox"] {
+    accent-color: #CC0D39;
+}
+
+.checkbox-item label {
+    margin: 10px 0;
+    line-height: 9px;
+    cursor: pointer;
+    font-size: 15px;
+    color: var(--graya);
+}
+
+.order-notes {
+    margin-top: 3px;
+}
+.form-group.order-notes textarea#order-notes {
+    margin-top: 14px;
 }

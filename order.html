@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <header class="nav-header">
+        <div class="container">
+            <div class="row nav-bar">
+                <div class="col-md-2">
+                    <div class="nav-bar-logo">
+                        <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="nav-bar-link">
+                        <!-- Mobile Toggle -->
+                        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu" type="button"><i
+                                class="fa-solid fa-bars"></i></button>
+                        <!-- Navigation -->
+                        <div class="nav-link" id="navMenu">
+                            <ul class="nav">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="price.html">Price</a></li>
+                                <li><a href="faq.html">FAQs</a></li>
+                                <li><a href="team.html">Our Team</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1">
+                    <div class="nav-bar-but">
+                        <button>login/ registration</button>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="nav-bar-icons row">
+                        <div class="col-sm-4"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div class="col-sm-4"><i class="fa-regular fa-heart"></i></div>
+                        <div class="col-sm-4"><i class="fa-solid fa-cart-shopping"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- team-page -->
+    <section class="price-page">
+        <div class="container">
+            <div class="price-cotainer text-center">
+                <h2>Shop Checkout</h2>
+                <ul class="price-ul">
+                    <li><a href="index.html">Home</a></li>
+                    <li><i class="fa-solid fa-angle-right"></i>Shop Checkout</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--====================
+           order-section
+    ======================== -->
+    <section class="order-section">
+        <div class="container">
+            <div class="order-container row">
+                <div class="col-md-8">
+                    <div class="order-left-content">
+                        <div class="billing-section">
+
+                            <h2>Billing details</h2>
+
+                            <!-- FAQ 1 -->
+                            <div class="odrer-faq-item">
+                                <div class="order-faq-question" id="order-faq-question-1">
+                                    <span>Returning customer? Click here to login</span>
+                                    <span class="order-faq-icon"><i class="fa-solid fa-angle-down"></i></span>
+                                </div>
+
+                                <div class="order-faq-answer" id="order-faq-answer-1">
+                                    <p>
+                                        If your order has not yet shipped, you can contact us to
+                                        change your shipping address
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <!-- FAQ 2 -->
+                            <div class="order-faq-item">
+                                <div class="order-faq-question" id="order-faq-question-2">
+                                    <span>Have a coupon? Click here to enter your code</span>
+                                    <span class="order-faq-icon"><i class="fa-solid fa-angle-down"></i></span>
+                                </div>
+
+                                <div class="order-faq-answer" id="order-faq-answer-2">
+                                    <div class="order-coupon-box">
+                                        <input type="text" placeholder="Coupon code">
+                                        <button>Apply coupon</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <form class="billing-form">
+
+                            <!-- First Name + Last Name -->
+                            <div class="form-row">
+
+                                <div class="form-group">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" id="first-name" name="first-name">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="last-name">Last Name</label>
+                                    <input type="text" id="last-name" name="last-name">
+                                </div>
+
+                            </div>
+
+
+                            <!-- Company Name -->
+                            <div class="form-group">
+                                <label for="company">Company name (optional)</label>
+                                <input type="text" id="company" name="company">
+                            </div>
+
+
+                            <!-- Country -->
+                            <div class="form-group">
+                                <label for="country">Country / Region *</label>
+
+                                <select id="country" name="country">
+                                    <option value="india">India</option>
+                                    <option value="usa">United States</option>
+                                    <option value="uk">United Kingdom</option>
+                                    <option value="canada">Canada</option>
+                                </select>
+                            </div>
+
+
+                            <!-- Street Address -->
+                            <div class="form-group">
+                                <label for="address">Street address *</label>
+
+                                <input type="text" id="address" name="address"
+                                    placeholder="House number and street name">
+
+                                <input type="text" id="apartment" name="apartment"
+                                    placeholder="Apartment, suite, unit, etc. (optional)" style="margin-top: 5px;">
+                            </div>
+
+
+                            <!-- Town / City -->
+                            <div class="form-group">
+                                <label for="city">Town / City *</label>
+
+                                <select id="city" name="city">
+                                    <option value="kota">Kota</option>
+                                    <option value="jaipur">Jaipur</option>
+                                    <option value="jodhpur">Jodhpur</option>
+                                    <option value="udaipur">Udaipur</option>
+                                </select>
+                            </div>
+
+
+                            <!-- State -->
+                            <div class="form-group">
+                                <label for="state">State *</label>
+
+                                <select id="state" name="state">
+                                    <option value="rajasthan">Rajasthan</option>
+                                    <option value="himachal-pradesh">Himachal Pradesh</option>
+                                    <option value="punjab">Punjab</option>
+                                    <option value="haryana">Haryana</option>
+                                </select>
+                            </div>
+
+
+                            <!-- ZIP Code -->
+                            <div class="form-group">
+                                <label for="zip">ZIP Code *</label>
+                                <input type="text" id="zip" name="zip">
+                            </div>
+
+
+                            <!-- Phone -->
+                            <div class="form-group">
+                                <label for="phone">Phone *</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+
+
+                            <!-- Email -->
+                            <div class="form-group">
+                                <label for="email">Email address *</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+
+
+                            <!-- Checkboxes -->
+                            <div class="checkbox-group">
+
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="account" name="account">
+                                    <label for="account">Create an account?</label>
+                                </div>
+
+                                <div class="checkbox-item">
+                                    <input type="checkbox" id="shipping" name="shipping">
+                                    <label for="shipping">Ship to a different address?</label>
+                                </div>
+
+                            </div>
+
+
+                            <!-- Order Notes -->
+                            <div class="form-group order-notes">
+
+                                <label for="order-notes">
+                                    Order notes (optional)
+                                </label>
+
+                                <textarea id="order-notes" name="order-notes"
+                                    placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top row">
+                <div class="col-md-3">
+                    <div class="footer-box-a">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+                        </div>
+                        <ul>
+                            <li>Address : 451 Wall Street, UK, London</li>
+                            <li>E-mail : example@info.com</li>
+                            <li>Phone : (064) 332-1233</li>
+                        </ul>
+                        <form action="" class="footer-form">
+                            <h5>subscribe to our newsletter</h5>
+                            <input type="email" name="email" placeholder="Your Email Address">
+                            <button><i class="fa-solid fa-arrow-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer-box-b">
+                        <h4>Recent Posts</h4>
+                        <div class="row footer-box-b-content">
+                            <div class="col-sm-3">
+                                <img src="images/footer1.png" alt="img" width="100%" class="footer-box-b-img">
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="footer-box-b-text">
+                                    <h5>Cozy Knit Cardigan Sweater</h5>
+                                    <p>July 23, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row footer-box-b-content">
+                            <div class="col-sm-3">
+                                <img src="images/footer2.png" alt="img" width="100%" class="footer-box-b-img">
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="footer-box-b-text">
+                                    <h5>Cozy Knit Cardigan Sweater</h5>
+                                    <p>July 23, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row footer-box-b-content">
+                            <div class="col-sm-3">
+                                <img src="images/footer3.png" alt="img" width="100%" class="footer-box-b-img">
+                            </div>
+                            <div class="col-sm-9">
+                                <div class="footer-box-b-text">
+                                    <h5>Cozy Knit Cardigan Sweater</h5>
+                                    <p>July 23, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-box-c">
+                        <h4>Our Store</h4>
+                        <ul>
+                            <li><a href="#">New York</a></li>
+                            <li><a href="#">London SF</a></li>
+                            <li><a href="#">Edinburg</a></li>
+                            <li><a href="#">los Angles</a></li>
+                            <li><a href="#">Chicago</a></li>
+                            <li><a href="#">Las Vegas</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-box-c">
+                        <h4>Useful Links</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Edinburg</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Latest News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="footer-box-c">
+                        <h4>Footer Menu</h4>
+                        <ul>
+                            <li><a href="#">Instagram profile</a></li>
+                            <li><a href="#">New Collection</a></li>
+                            <li><a href="#">Edinburg</a></li>
+                            <li><a href="#">Woman Dress</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-end text-center">
+                <p>© 2026 DexignZone Theme. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- script--js -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scrip.js"></script>
+    <script src="js/order.js"></script>
+
+</body>
+
+</html>
